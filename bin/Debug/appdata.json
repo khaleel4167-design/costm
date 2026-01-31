@@ -32,7 +32,7 @@
       "Role": 1
     }
   ],
-  "LastInvoiceNumber": 1013,
+  "LastInvoiceNumber": 1015,
   "Invoices": [
     {
       "Number": 1,
@@ -7426,6 +7426,198 @@
       "GrandTotal": 20.70,
       "ItemsCount": 1,
       "Total": 20.70,
+      "Status": 3
+    },
+    {
+      "Number": 1014,
+      "Date": "2026-01-31T17:14:23.1608307+03:00",
+      "Time": "2026-01-31T17:14:23.1608307+03:00",
+      "UserName": "Admin",
+      "Role": 0,
+      "Items": [
+        {
+          "Name": "شاي كرك",
+          "Price": 20,
+          "Quantity": 7,
+          "Total": 140
+        },
+        {
+          "Name": "قهوة عربي مع التمر",
+          "Price": 25,
+          "Quantity": 2,
+          "Total": 50
+        },
+        {
+          "Name": "سينشن لاتيه",
+          "Price": 15,
+          "Quantity": 2,
+          "Total": 30
+        },
+        {
+          "Name": "أمريكانو",
+          "Price": 10,
+          "Quantity": 2,
+          "Total": 20
+        },
+        {
+          "Name": "اسبرسو",
+          "Price": 8,
+          "Quantity": 2,
+          "Total": 16
+        },
+        {
+          "Name": "قهوة تركي صغير",
+          "Price": 8,
+          "Quantity": 1,
+          "Total": 8
+        },
+        {
+          "Name": "هوت موكا",
+          "Price": 14,
+          "Quantity": 1,
+          "Total": 14
+        },
+        {
+          "Name": "قهوة فرنسي",
+          "Price": 15,
+          "Quantity": 1,
+          "Total": 15
+        },
+        {
+          "Name": "دلة قهوة سعودي",
+          "Price": 30,
+          "Quantity": 1,
+          "Total": 30
+        },
+        {
+          "Name": "لاتيه",
+          "Price": 13,
+          "Quantity": 1,
+          "Total": 13
+        },
+        {
+          "Name": "ميكاتو",
+          "Price": 12,
+          "Quantity": 1,
+          "Total": 12
+        },
+        {
+          "Name": "شوكلاته",
+          "Price": 15,
+          "Quantity": 1,
+          "Total": 15
+        },
+        {
+          "Name": "براد شاي",
+          "Price": 20,
+          "Quantity": 1,
+          "Total": 20
+        },
+        {
+          "Name": "هوت ماتشا",
+          "Price": 15,
+          "Quantity": 1,
+          "Total": 15
+        },
+        {
+          "Name": "كابتشينو",
+          "Price": 12,
+          "Quantity": 1,
+          "Total": 12
+        },
+        {
+          "Name": "شاي أحمر",
+          "Price": 5,
+          "Quantity": 1,
+          "Total": 5
+        },
+        {
+          "Name": "قهوة تركي كبير",
+          "Price": 12,
+          "Quantity": 1,
+          "Total": 12
+        },
+        {
+          "Name": "كورتاج",
+          "Price": 12,
+          "Quantity": 1,
+          "Total": 12
+        },
+        {
+          "Name": "قهوة ايطالي",
+          "Price": 15,
+          "Quantity": 1,
+          "Total": 15
+        },
+        {
+          "Name": "فلات وايت",
+          "Price": 14,
+          "Quantity": 1,
+          "Total": 14
+        },
+        {
+          "Name": "ترمس شاي",
+          "Price": 18,
+          "Quantity": 1,
+          "Total": 18
+        }
+      ],
+      "SubTotal": 486.0,
+      "Tax": 72.90,
+      "GrandTotal": 558.90,
+      "ItemsCount": 31,
+      "Total": 558.90,
+      "Status": 3
+    },
+    {
+      "Number": 1015,
+      "Date": "2026-01-31T17:15:05.0750176+03:00",
+      "Time": "2026-01-31T17:15:05.0750176+03:00",
+      "UserName": "Admin",
+      "Role": 0,
+      "Items": [
+        {
+          "Name": "قهوة تركي صغير",
+          "Price": 8,
+          "Quantity": 1,
+          "Total": 8
+        },
+        {
+          "Name": "قهوة فرنسي",
+          "Price": 15,
+          "Quantity": 1,
+          "Total": 15
+        },
+        {
+          "Name": "سينشن لاتيه",
+          "Price": 15,
+          "Quantity": 1,
+          "Total": 15
+        },
+        {
+          "Name": "قهوة عربي مع التمر",
+          "Price": 25,
+          "Quantity": 1,
+          "Total": 25
+        },
+        {
+          "Name": "براد شاي",
+          "Price": 20,
+          "Quantity": 1,
+          "Total": 20
+        },
+        {
+          "Name": "هوت ماتشا",
+          "Price": 15,
+          "Quantity": 1,
+          "Total": 15
+        }
+      ],
+      "SubTotal": 98.0,
+      "Tax": 14.70,
+      "GrandTotal": 112.70,
+      "ItemsCount": 6,
+      "Total": 112.70,
       "Status": 3
     }
   ]

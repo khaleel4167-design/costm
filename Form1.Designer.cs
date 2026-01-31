@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customer));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelHotDrinks = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -116,12 +116,12 @@
             this.buttonPrintInvoice = new System.Windows.Forms.Button();
             this.buttonCancelInvoice = new System.Windows.Forms.Button();
             this.buttonDeleteItem = new System.Windows.Forms.Button();
-            this.buttonMenu = new System.Windows.Forms.Button();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.buttonSettings = new System.Windows.Forms.Button();
             this.buttonReports = new System.Windows.Forms.Button();
             this.buttonManageUsers = new System.Windows.Forms.Button();
             this.buttonLogout = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             this.panelHotDrinks.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panelInvoice.SuspendLayout();
@@ -138,17 +138,19 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.buttonSuspendInvoice);
+            this.panel1.Controls.Add(this.buttonResumeInvoice);
             this.panel1.Location = new System.Drawing.Point(790, 11);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(342, 50);
+            this.panel1.Size = new System.Drawing.Size(318, 50);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panelHotDrinks
             // 
             this.panelHotDrinks.Controls.Add(this.flowLayoutPanel1);
-            this.panelHotDrinks.Location = new System.Drawing.Point(436, 199);
+            this.panelHotDrinks.Location = new System.Drawing.Point(454, 199);
             this.panelHotDrinks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelHotDrinks.Name = "panelHotDrinks";
             this.panelHotDrinks.Size = new System.Drawing.Size(1258, 702);
@@ -616,14 +618,14 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(34)))), ((int)(((byte)(51)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(34)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(34)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridView1.Location = new System.Drawing.Point(8, 12);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1594,12 +1596,12 @@
             // buttonSuspendInvoice
             // 
             this.buttonSuspendInvoice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(34)))), ((int)(((byte)(51)))));
-            this.buttonSuspendInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSuspendInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSuspendInvoice.ForeColor = System.Drawing.Color.White;
-            this.buttonSuspendInvoice.Location = new System.Drawing.Point(1393, 29);
+            this.buttonSuspendInvoice.Location = new System.Drawing.Point(168, 2);
             this.buttonSuspendInvoice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSuspendInvoice.Name = "buttonSuspendInvoice";
-            this.buttonSuspendInvoice.Size = new System.Drawing.Size(111, 61);
+            this.buttonSuspendInvoice.Size = new System.Drawing.Size(137, 46);
             this.buttonSuspendInvoice.TabIndex = 14;
             this.buttonSuspendInvoice.Text = "تعليق فاتورة";
             this.buttonSuspendInvoice.UseVisualStyleBackColor = false;
@@ -1608,12 +1610,12 @@
             // buttonResumeInvoice
             // 
             this.buttonResumeInvoice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(34)))), ((int)(((byte)(51)))));
-            this.buttonResumeInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonResumeInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonResumeInvoice.ForeColor = System.Drawing.Color.White;
-            this.buttonResumeInvoice.Location = new System.Drawing.Point(1282, 29);
+            this.buttonResumeInvoice.Location = new System.Drawing.Point(11, 2);
             this.buttonResumeInvoice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonResumeInvoice.Name = "buttonResumeInvoice";
-            this.buttonResumeInvoice.Size = new System.Drawing.Size(111, 61);
+            this.buttonResumeInvoice.Size = new System.Drawing.Size(151, 46);
             this.buttonResumeInvoice.TabIndex = 14;
             this.buttonResumeInvoice.Text = "استرجاع فاتورة";
             this.buttonResumeInvoice.UseVisualStyleBackColor = false;
@@ -1628,10 +1630,10 @@
             this.buttonPrintInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPrintInvoice.ForeColor = System.Drawing.Color.White;
             this.buttonPrintInvoice.Image = ((System.Drawing.Image)(resources.GetObject("buttonPrintInvoice.Image")));
-            this.buttonPrintInvoice.Location = new System.Drawing.Point(214, 811);
+            this.buttonPrintInvoice.Location = new System.Drawing.Point(214, 792);
             this.buttonPrintInvoice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonPrintInvoice.Name = "buttonPrintInvoice";
-            this.buttonPrintInvoice.Size = new System.Drawing.Size(208, 77);
+            this.buttonPrintInvoice.Size = new System.Drawing.Size(208, 96);
             this.buttonPrintInvoice.TabIndex = 6;
             this.buttonPrintInvoice.Text = "طباعة الفاتورة";
             this.buttonPrintInvoice.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -1641,46 +1643,38 @@
             // buttonCancelInvoice
             // 
             this.buttonCancelInvoice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.buttonCancelInvoice.FlatAppearance.BorderSize = 0;
+            this.buttonCancelInvoice.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.buttonCancelInvoice.FlatAppearance.BorderSize = 3;
             this.buttonCancelInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancelInvoice.ForeColor = System.Drawing.Color.White;
-            this.buttonCancelInvoice.Image = ((System.Drawing.Image)(resources.GetObject("buttonCancelInvoice.Image")));
-            this.buttonCancelInvoice.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonCancelInvoice.Location = new System.Drawing.Point(113, 834);
+            this.buttonCancelInvoice.Image = global::Customer.Properties.Resources.bin;
+            this.buttonCancelInvoice.Location = new System.Drawing.Point(113, 792);
             this.buttonCancelInvoice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonCancelInvoice.Name = "buttonCancelInvoice";
-            this.buttonCancelInvoice.Size = new System.Drawing.Size(96, 54);
+            this.buttonCancelInvoice.Size = new System.Drawing.Size(96, 96);
             this.buttonCancelInvoice.TabIndex = 5;
             this.buttonCancelInvoice.Text = "حذف الفاتورة";
-            this.buttonCancelInvoice.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonCancelInvoice.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.buttonCancelInvoice.UseVisualStyleBackColor = false;
             this.buttonCancelInvoice.Click += new System.EventHandler(this.buttonDeleteItem_Click);
             // 
             // buttonDeleteItem
             // 
-            this.buttonDeleteItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonDeleteItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonDeleteItem.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.buttonDeleteItem.FlatAppearance.BorderSize = 3;
             this.buttonDeleteItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDeleteItem.ForeColor = System.Drawing.Color.White;
             this.buttonDeleteItem.Image = global::Customer.Properties.Resources.bin;
-            this.buttonDeleteItem.Location = new System.Drawing.Point(12, 834);
+            this.buttonDeleteItem.Location = new System.Drawing.Point(12, 792);
             this.buttonDeleteItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonDeleteItem.Name = "buttonDeleteItem";
-            this.buttonDeleteItem.Size = new System.Drawing.Size(96, 54);
+            this.buttonDeleteItem.Size = new System.Drawing.Size(96, 96);
             this.buttonDeleteItem.TabIndex = 5;
             this.buttonDeleteItem.Text = "حذف العنصر";
             this.buttonDeleteItem.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.buttonDeleteItem.UseVisualStyleBackColor = false;
             this.buttonDeleteItem.Click += new System.EventHandler(this.buttonDelete_Click);
-            // 
-            // buttonMenu
-            // 
-            this.buttonMenu.Location = new System.Drawing.Point(0, 0);
-            this.buttonMenu.Name = "buttonMenu";
-            this.buttonMenu.Size = new System.Drawing.Size(75, 23);
-            this.buttonMenu.TabIndex = 2;
             // 
             // panelMenu
             // 
@@ -1748,9 +1742,6 @@
             this.ClientSize = new System.Drawing.Size(1687, 912);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelHotDrinks);
-            this.Controls.Add(this.buttonMenu);
-            this.Controls.Add(this.buttonResumeInvoice);
-            this.Controls.Add(this.buttonSuspendInvoice);
             this.Controls.Add(this.Dessertspanel);
             this.Controls.Add(this.Mojitopanel);
             this.Controls.Add(this.panel3);
@@ -1768,6 +1759,7 @@
             this.Text = "Customer";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Customer_Load);
+            this.panel1.ResumeLayout(false);
             this.panelHotDrinks.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panelInvoice.ResumeLayout(false);
@@ -1872,7 +1864,6 @@
         private System.Windows.Forms.Button LemonCake;
         private System.Windows.Forms.Button buttonSuspendInvoice;
         private System.Windows.Forms.Button buttonResumeInvoice;
-        private System.Windows.Forms.Button buttonMenu;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Button buttonLogout;
         private System.Windows.Forms.Button buttonReports;
