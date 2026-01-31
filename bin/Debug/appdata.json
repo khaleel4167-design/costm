@@ -32,7 +32,7 @@
       "Role": 1
     }
   ],
-  "LastInvoiceNumber": 1012,
+  "LastInvoiceNumber": 1013,
   "Invoices": [
     {
       "Number": 1,
@@ -7405,6 +7405,27 @@
       "GrandTotal": 18.40,
       "ItemsCount": 1,
       "Total": 18.40,
+      "Status": 3
+    },
+    {
+      "Number": 1013,
+      "Date": "2026-01-31T16:37:12.9167831+03:00",
+      "Time": "2026-01-31T16:37:12.9167831+03:00",
+      "UserName": "Admin",
+      "Role": 0,
+      "Items": [
+        {
+          "Name": "ترمس شاي",
+          "Price": 18,
+          "Quantity": 1,
+          "Total": 18
+        }
+      ],
+      "SubTotal": 18.0,
+      "Tax": 2.70,
+      "GrandTotal": 20.70,
+      "ItemsCount": 1,
+      "Total": 20.70,
       "Status": 3
     }
   ]

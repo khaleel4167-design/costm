@@ -29,31 +29,32 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customer));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelHotDrinks = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.SaudiCoffeePot = new System.Windows.Forms.Button();
             this.ArabicCoffeewithDates = new System.Windows.Forms.Button();
-            this.RedTea = new System.Windows.Forms.Button();
-            this.Espresso = new System.Windows.Forms.Button();
-            this.SmallTurkishCoffee = new System.Windows.Forms.Button();
-            this.Americano = new System.Windows.Forms.Button();
-            this.ItalianCoffee = new System.Windows.Forms.Button();
-            this.FlatWhite = new System.Windows.Forms.Button();
-            this.HotMatcha = new System.Windows.Forms.Button();
-            this.Chocolate = new System.Windows.Forms.Button();
-            this.SensationLatte = new System.Windows.Forms.Button();
-            this.Cortage = new System.Windows.Forms.Button();
-            this.LargeTurkishCoffee = new System.Windows.Forms.Button();
-            this.Cappuccino = new System.Windows.Forms.Button();
-            this.Micato = new System.Windows.Forms.Button();
-            this.latte = new System.Windows.Forms.Button();
-            this.HotMocha = new System.Windows.Forms.Button();
             this.KarakTea = new System.Windows.Forms.Button();
             this.TeaKettle = new System.Windows.Forms.Button();
             this.TeaThermos = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.FrenchCoffee = new System.Windows.Forms.Button();
-            this.SaudiCoffeePot = new System.Windows.Forms.Button();
+            this.SensationLatte = new System.Windows.Forms.Button();
+            this.Chocolate = new System.Windows.Forms.Button();
+            this.HotMatcha = new System.Windows.Forms.Button();
+            this.FlatWhite = new System.Windows.Forms.Button();
+            this.ItalianCoffee = new System.Windows.Forms.Button();
+            this.HotMocha = new System.Windows.Forms.Button();
+            this.latte = new System.Windows.Forms.Button();
+            this.Micato = new System.Windows.Forms.Button();
+            this.Cappuccino = new System.Windows.Forms.Button();
+            this.LargeTurkishCoffee = new System.Windows.Forms.Button();
+            this.Cortage = new System.Windows.Forms.Button();
+            this.SmallTurkishCoffee = new System.Windows.Forms.Button();
+            this.Americano = new System.Windows.Forms.Button();
+            this.Espresso = new System.Windows.Forms.Button();
+            this.RedTea = new System.Windows.Forms.Button();
             this.panelInvoice = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.labelTotal = new System.Windows.Forms.Label();
@@ -121,8 +122,8 @@
             this.buttonReports = new System.Windows.Forms.Button();
             this.buttonManageUsers = new System.Windows.Forms.Button();
             this.buttonLogout = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panelHotDrinks.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.panelInvoice.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panelSummary.SuspendLayout();
@@ -133,7 +134,6 @@
             this.Mojitopanel.SuspendLayout();
             this.Dessertspanel.SuspendLayout();
             this.panelMenu.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -154,6 +154,55 @@
             this.panelHotDrinks.Size = new System.Drawing.Size(1258, 702);
             this.panelHotDrinks.TabIndex = 1;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.SaudiCoffeePot);
+            this.flowLayoutPanel1.Controls.Add(this.ArabicCoffeewithDates);
+            this.flowLayoutPanel1.Controls.Add(this.KarakTea);
+            this.flowLayoutPanel1.Controls.Add(this.TeaKettle);
+            this.flowLayoutPanel1.Controls.Add(this.TeaThermos);
+            this.flowLayoutPanel1.Controls.Add(this.button14);
+            this.flowLayoutPanel1.Controls.Add(this.FrenchCoffee);
+            this.flowLayoutPanel1.Controls.Add(this.SensationLatte);
+            this.flowLayoutPanel1.Controls.Add(this.Chocolate);
+            this.flowLayoutPanel1.Controls.Add(this.HotMatcha);
+            this.flowLayoutPanel1.Controls.Add(this.FlatWhite);
+            this.flowLayoutPanel1.Controls.Add(this.ItalianCoffee);
+            this.flowLayoutPanel1.Controls.Add(this.HotMocha);
+            this.flowLayoutPanel1.Controls.Add(this.latte);
+            this.flowLayoutPanel1.Controls.Add(this.Micato);
+            this.flowLayoutPanel1.Controls.Add(this.Cappuccino);
+            this.flowLayoutPanel1.Controls.Add(this.LargeTurkishCoffee);
+            this.flowLayoutPanel1.Controls.Add(this.Cortage);
+            this.flowLayoutPanel1.Controls.Add(this.SmallTurkishCoffee);
+            this.flowLayoutPanel1.Controls.Add(this.Americano);
+            this.flowLayoutPanel1.Controls.Add(this.Espresso);
+            this.flowLayoutPanel1.Controls.Add(this.RedTea);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1258, 702);
+            this.flowLayoutPanel1.TabIndex = 2;
+            // 
+            // SaudiCoffeePot
+            // 
+            this.SaudiCoffeePot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
+            this.SaudiCoffeePot.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.SaudiCoffeePot.FlatAppearance.BorderSize = 2;
+            this.SaudiCoffeePot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SaudiCoffeePot.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaudiCoffeePot.ForeColor = System.Drawing.Color.White;
+            this.SaudiCoffeePot.Image = ((System.Drawing.Image)(resources.GetObject("SaudiCoffeePot.Image")));
+            this.SaudiCoffeePot.Location = new System.Drawing.Point(3, 2);
+            this.SaudiCoffeePot.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SaudiCoffeePot.Name = "SaudiCoffeePot";
+            this.SaudiCoffeePot.Size = new System.Drawing.Size(196, 136);
+            this.SaudiCoffeePot.TabIndex = 1;
+            this.SaudiCoffeePot.Text = "دلة قهوة سعودي\r\nSaudi Coffee Pot\r\n30.00";
+            this.SaudiCoffeePot.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.SaudiCoffeePot.UseVisualStyleBackColor = false;
+            this.SaudiCoffeePot.Click += new System.EventHandler(this.SaudiCoffeePot_Click);
+            // 
             // ArabicCoffeewithDates
             // 
             this.ArabicCoffeewithDates.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
@@ -172,291 +221,6 @@
             this.ArabicCoffeewithDates.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.ArabicCoffeewithDates.UseVisualStyleBackColor = false;
             this.ArabicCoffeewithDates.Click += new System.EventHandler(this.ArabicCoffeewithDates_Click);
-            // 
-            // RedTea
-            // 
-            this.RedTea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
-            this.RedTea.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.RedTea.FlatAppearance.BorderSize = 2;
-            this.RedTea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RedTea.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RedTea.ForeColor = System.Drawing.Color.White;
-            this.RedTea.Image = ((System.Drawing.Image)(resources.GetObject("RedTea.Image")));
-            this.RedTea.Location = new System.Drawing.Point(609, 422);
-            this.RedTea.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.RedTea.Name = "RedTea";
-            this.RedTea.Size = new System.Drawing.Size(196, 136);
-            this.RedTea.TabIndex = 1;
-            this.RedTea.Text = "شاي احمر\nRed Tea\n5.00";
-            this.RedTea.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.RedTea.UseVisualStyleBackColor = false;
-            this.RedTea.Click += new System.EventHandler(this.RedTea_Click);
-            // 
-            // Espresso
-            // 
-            this.Espresso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
-            this.Espresso.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.Espresso.FlatAppearance.BorderSize = 2;
-            this.Espresso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Espresso.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Espresso.ForeColor = System.Drawing.Color.White;
-            this.Espresso.Image = ((System.Drawing.Image)(resources.GetObject("Espresso.Image")));
-            this.Espresso.Location = new System.Drawing.Point(407, 422);
-            this.Espresso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Espresso.Name = "Espresso";
-            this.Espresso.Size = new System.Drawing.Size(196, 136);
-            this.Espresso.TabIndex = 1;
-            this.Espresso.Text = "اسبرسو\nEspresso\n8.00";
-            this.Espresso.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.Espresso.UseVisualStyleBackColor = false;
-            this.Espresso.Click += new System.EventHandler(this.Espresso_Click);
-            // 
-            // SmallTurkishCoffee
-            // 
-            this.SmallTurkishCoffee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
-            this.SmallTurkishCoffee.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.SmallTurkishCoffee.FlatAppearance.BorderSize = 2;
-            this.SmallTurkishCoffee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SmallTurkishCoffee.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SmallTurkishCoffee.ForeColor = System.Drawing.Color.White;
-            this.SmallTurkishCoffee.Image = ((System.Drawing.Image)(resources.GetObject("SmallTurkishCoffee.Image")));
-            this.SmallTurkishCoffee.Location = new System.Drawing.Point(3, 422);
-            this.SmallTurkishCoffee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.SmallTurkishCoffee.Name = "SmallTurkishCoffee";
-            this.SmallTurkishCoffee.Size = new System.Drawing.Size(196, 136);
-            this.SmallTurkishCoffee.TabIndex = 1;
-            this.SmallTurkishCoffee.Text = "قهوة تركي صغير\r\nSmall Turkish Coffee\r\n8.00";
-            this.SmallTurkishCoffee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.SmallTurkishCoffee.UseVisualStyleBackColor = false;
-            this.SmallTurkishCoffee.Click += new System.EventHandler(this.SmallTurkishCoffee_Click);
-            // 
-            // Americano
-            // 
-            this.Americano.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
-            this.Americano.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.Americano.FlatAppearance.BorderSize = 2;
-            this.Americano.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Americano.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Americano.ForeColor = System.Drawing.Color.White;
-            this.Americano.Image = ((System.Drawing.Image)(resources.GetObject("Americano.Image")));
-            this.Americano.Location = new System.Drawing.Point(205, 422);
-            this.Americano.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Americano.Name = "Americano";
-            this.Americano.Size = new System.Drawing.Size(196, 136);
-            this.Americano.TabIndex = 1;
-            this.Americano.Text = "امريكانو\nAmericano\n10.00";
-            this.Americano.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.Americano.UseVisualStyleBackColor = false;
-            this.Americano.Click += new System.EventHandler(this.Americano_Click);
-            // 
-            // ItalianCoffee
-            // 
-            this.ItalianCoffee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
-            this.ItalianCoffee.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.ItalianCoffee.FlatAppearance.BorderSize = 2;
-            this.ItalianCoffee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ItalianCoffee.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ItalianCoffee.ForeColor = System.Drawing.Color.White;
-            this.ItalianCoffee.Image = ((System.Drawing.Image)(resources.GetObject("ItalianCoffee.Image")));
-            this.ItalianCoffee.Location = new System.Drawing.Point(1013, 142);
-            this.ItalianCoffee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ItalianCoffee.Name = "ItalianCoffee";
-            this.ItalianCoffee.Size = new System.Drawing.Size(196, 136);
-            this.ItalianCoffee.TabIndex = 1;
-            this.ItalianCoffee.Text = "قهوة ايطالي\r\nItalian Coffee\r\n15.00";
-            this.ItalianCoffee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.ItalianCoffee.UseVisualStyleBackColor = false;
-            this.ItalianCoffee.Click += new System.EventHandler(this.ItalianCoffee_Click);
-            // 
-            // FlatWhite
-            // 
-            this.FlatWhite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
-            this.FlatWhite.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.FlatWhite.FlatAppearance.BorderSize = 2;
-            this.FlatWhite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FlatWhite.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FlatWhite.ForeColor = System.Drawing.Color.White;
-            this.FlatWhite.Image = ((System.Drawing.Image)(resources.GetObject("FlatWhite.Image")));
-            this.FlatWhite.Location = new System.Drawing.Point(811, 142);
-            this.FlatWhite.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.FlatWhite.Name = "FlatWhite";
-            this.FlatWhite.Size = new System.Drawing.Size(196, 136);
-            this.FlatWhite.TabIndex = 1;
-            this.FlatWhite.Text = "فلات وايت\r\nFlat White\r\n14.00";
-            this.FlatWhite.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.FlatWhite.UseVisualStyleBackColor = false;
-            this.FlatWhite.Click += new System.EventHandler(this.FlatWhite_Click);
-            // 
-            // HotMatcha
-            // 
-            this.HotMatcha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
-            this.HotMatcha.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.HotMatcha.FlatAppearance.BorderSize = 2;
-            this.HotMatcha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HotMatcha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HotMatcha.ForeColor = System.Drawing.Color.White;
-            this.HotMatcha.Image = ((System.Drawing.Image)(resources.GetObject("HotMatcha.Image")));
-            this.HotMatcha.Location = new System.Drawing.Point(609, 142);
-            this.HotMatcha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.HotMatcha.Name = "HotMatcha";
-            this.HotMatcha.Size = new System.Drawing.Size(196, 136);
-            this.HotMatcha.TabIndex = 1;
-            this.HotMatcha.Text = "هوت ماتشا\r\nHot Matcha\r\n15.00";
-            this.HotMatcha.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.HotMatcha.UseVisualStyleBackColor = false;
-            this.HotMatcha.Click += new System.EventHandler(this.HotMatcha_Click);
-            // 
-            // Chocolate
-            // 
-            this.Chocolate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
-            this.Chocolate.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.Chocolate.FlatAppearance.BorderSize = 2;
-            this.Chocolate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Chocolate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Chocolate.ForeColor = System.Drawing.Color.White;
-            this.Chocolate.Image = ((System.Drawing.Image)(resources.GetObject("Chocolate.Image")));
-            this.Chocolate.Location = new System.Drawing.Point(407, 142);
-            this.Chocolate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Chocolate.Name = "Chocolate";
-            this.Chocolate.Size = new System.Drawing.Size(196, 136);
-            this.Chocolate.TabIndex = 1;
-            this.Chocolate.Text = "شوكلاته\r\nChocolate\r\n15.00";
-            this.Chocolate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.Chocolate.UseVisualStyleBackColor = false;
-            this.Chocolate.Click += new System.EventHandler(this.Chocolate_Click);
-            // 
-            // SensationLatte
-            // 
-            this.SensationLatte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
-            this.SensationLatte.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.SensationLatte.FlatAppearance.BorderSize = 2;
-            this.SensationLatte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SensationLatte.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SensationLatte.ForeColor = System.Drawing.Color.White;
-            this.SensationLatte.Image = ((System.Drawing.Image)(resources.GetObject("SensationLatte.Image")));
-            this.SensationLatte.Location = new System.Drawing.Point(205, 142);
-            this.SensationLatte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.SensationLatte.Name = "SensationLatte";
-            this.SensationLatte.Size = new System.Drawing.Size(196, 136);
-            this.SensationLatte.TabIndex = 1;
-            this.SensationLatte.Text = "سينشن لاتيه\r\nSensation Latte\r\n15.00";
-            this.SensationLatte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.SensationLatte.UseVisualStyleBackColor = false;
-            this.SensationLatte.Click += new System.EventHandler(this.SensationLatte_Click);
-            // 
-            // Cortage
-            // 
-            this.Cortage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
-            this.Cortage.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.Cortage.FlatAppearance.BorderSize = 2;
-            this.Cortage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cortage.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cortage.ForeColor = System.Drawing.Color.White;
-            this.Cortage.Image = ((System.Drawing.Image)(resources.GetObject("Cortage.Image")));
-            this.Cortage.Location = new System.Drawing.Point(1013, 282);
-            this.Cortage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Cortage.Name = "Cortage";
-            this.Cortage.Size = new System.Drawing.Size(196, 136);
-            this.Cortage.TabIndex = 1;
-            this.Cortage.Text = "كورتاج\nCortage\n12.00";
-            this.Cortage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.Cortage.UseVisualStyleBackColor = false;
-            this.Cortage.Click += new System.EventHandler(this.Cortage_Click);
-            // 
-            // LargeTurkishCoffee
-            // 
-            this.LargeTurkishCoffee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
-            this.LargeTurkishCoffee.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.LargeTurkishCoffee.FlatAppearance.BorderSize = 2;
-            this.LargeTurkishCoffee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LargeTurkishCoffee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LargeTurkishCoffee.ForeColor = System.Drawing.Color.White;
-            this.LargeTurkishCoffee.Image = ((System.Drawing.Image)(resources.GetObject("LargeTurkishCoffee.Image")));
-            this.LargeTurkishCoffee.Location = new System.Drawing.Point(811, 282);
-            this.LargeTurkishCoffee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LargeTurkishCoffee.Name = "LargeTurkishCoffee";
-            this.LargeTurkishCoffee.Size = new System.Drawing.Size(196, 136);
-            this.LargeTurkishCoffee.TabIndex = 1;
-            this.LargeTurkishCoffee.Text = "قهوة تركي كبير\nLarge Turkish Coffee\n12.00";
-            this.LargeTurkishCoffee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.LargeTurkishCoffee.UseVisualStyleBackColor = false;
-            this.LargeTurkishCoffee.Click += new System.EventHandler(this.LargeTurkishCoffee_Click_1);
-            // 
-            // Cappuccino
-            // 
-            this.Cappuccino.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
-            this.Cappuccino.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.Cappuccino.FlatAppearance.BorderSize = 2;
-            this.Cappuccino.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cappuccino.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cappuccino.ForeColor = System.Drawing.Color.White;
-            this.Cappuccino.Image = ((System.Drawing.Image)(resources.GetObject("Cappuccino.Image")));
-            this.Cappuccino.Location = new System.Drawing.Point(609, 282);
-            this.Cappuccino.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Cappuccino.Name = "Cappuccino";
-            this.Cappuccino.Size = new System.Drawing.Size(196, 136);
-            this.Cappuccino.TabIndex = 1;
-            this.Cappuccino.Text = "كابتشينو\nCappuccino\n12.00";
-            this.Cappuccino.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.Cappuccino.UseVisualStyleBackColor = false;
-            this.Cappuccino.Click += new System.EventHandler(this.Cappuccino_Click);
-            // 
-            // Micato
-            // 
-            this.Micato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
-            this.Micato.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.Micato.FlatAppearance.BorderSize = 2;
-            this.Micato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Micato.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Micato.ForeColor = System.Drawing.Color.White;
-            this.Micato.Image = ((System.Drawing.Image)(resources.GetObject("Micato.Image")));
-            this.Micato.Location = new System.Drawing.Point(407, 282);
-            this.Micato.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Micato.Name = "Micato";
-            this.Micato.Size = new System.Drawing.Size(196, 136);
-            this.Micato.TabIndex = 1;
-            this.Micato.Text = "ميكاتو\nMicato\n12.00";
-            this.Micato.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.Micato.UseVisualStyleBackColor = false;
-            this.Micato.Click += new System.EventHandler(this.Micato_Click);
-            // 
-            // latte
-            // 
-            this.latte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
-            this.latte.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.latte.FlatAppearance.BorderSize = 2;
-            this.latte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.latte.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.latte.ForeColor = System.Drawing.Color.White;
-            this.latte.Image = ((System.Drawing.Image)(resources.GetObject("latte.Image")));
-            this.latte.Location = new System.Drawing.Point(205, 282);
-            this.latte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.latte.Name = "latte";
-            this.latte.Size = new System.Drawing.Size(196, 136);
-            this.latte.TabIndex = 1;
-            this.latte.Text = "لاتيه\nLatte\n13.00";
-            this.latte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.latte.UseVisualStyleBackColor = false;
-            this.latte.Click += new System.EventHandler(this.latte_Click);
-            // 
-            // HotMocha
-            // 
-            this.HotMocha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
-            this.HotMocha.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.HotMocha.FlatAppearance.BorderSize = 2;
-            this.HotMocha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HotMocha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HotMocha.ForeColor = System.Drawing.Color.White;
-            this.HotMocha.Image = ((System.Drawing.Image)(resources.GetObject("HotMocha.Image")));
-            this.HotMocha.Location = new System.Drawing.Point(3, 282);
-            this.HotMocha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.HotMocha.Name = "HotMocha";
-            this.HotMocha.Size = new System.Drawing.Size(196, 136);
-            this.HotMocha.TabIndex = 1;
-            this.HotMocha.Text = "هوت موكا\r\nHot Mocha\r\n14.00";
-            this.HotMocha.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.HotMocha.UseVisualStyleBackColor = false;
-            this.HotMocha.Click += new System.EventHandler(this.HotMocha_Click);
             // 
             // KarakTea
             // 
@@ -552,24 +316,290 @@
             this.FrenchCoffee.UseVisualStyleBackColor = false;
             this.FrenchCoffee.Click += new System.EventHandler(this.FrenchCoffee_Click);
             // 
-            // SaudiCoffeePot
+            // SensationLatte
             // 
-            this.SaudiCoffeePot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
-            this.SaudiCoffeePot.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.SaudiCoffeePot.FlatAppearance.BorderSize = 2;
-            this.SaudiCoffeePot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SaudiCoffeePot.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaudiCoffeePot.ForeColor = System.Drawing.Color.White;
-            this.SaudiCoffeePot.Image = ((System.Drawing.Image)(resources.GetObject("SaudiCoffeePot.Image")));
-            this.SaudiCoffeePot.Location = new System.Drawing.Point(3, 2);
-            this.SaudiCoffeePot.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.SaudiCoffeePot.Name = "SaudiCoffeePot";
-            this.SaudiCoffeePot.Size = new System.Drawing.Size(196, 136);
-            this.SaudiCoffeePot.TabIndex = 1;
-            this.SaudiCoffeePot.Text = "دلة قهوة سعودي\r\nSaudi Coffee Pot\r\n30.00";
-            this.SaudiCoffeePot.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.SaudiCoffeePot.UseVisualStyleBackColor = false;
-            this.SaudiCoffeePot.Click += new System.EventHandler(this.SaudiCoffeePot_Click);
+            this.SensationLatte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
+            this.SensationLatte.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.SensationLatte.FlatAppearance.BorderSize = 2;
+            this.SensationLatte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SensationLatte.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SensationLatte.ForeColor = System.Drawing.Color.White;
+            this.SensationLatte.Image = ((System.Drawing.Image)(resources.GetObject("SensationLatte.Image")));
+            this.SensationLatte.Location = new System.Drawing.Point(205, 142);
+            this.SensationLatte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SensationLatte.Name = "SensationLatte";
+            this.SensationLatte.Size = new System.Drawing.Size(196, 136);
+            this.SensationLatte.TabIndex = 1;
+            this.SensationLatte.Text = "سينشن لاتيه\r\nSensation Latte\r\n15.00";
+            this.SensationLatte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.SensationLatte.UseVisualStyleBackColor = false;
+            this.SensationLatte.Click += new System.EventHandler(this.SensationLatte_Click);
+            // 
+            // Chocolate
+            // 
+            this.Chocolate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
+            this.Chocolate.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.Chocolate.FlatAppearance.BorderSize = 2;
+            this.Chocolate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Chocolate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Chocolate.ForeColor = System.Drawing.Color.White;
+            this.Chocolate.Image = ((System.Drawing.Image)(resources.GetObject("Chocolate.Image")));
+            this.Chocolate.Location = new System.Drawing.Point(407, 142);
+            this.Chocolate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Chocolate.Name = "Chocolate";
+            this.Chocolate.Size = new System.Drawing.Size(196, 136);
+            this.Chocolate.TabIndex = 1;
+            this.Chocolate.Text = "شوكلاته\r\nChocolate\r\n15.00";
+            this.Chocolate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Chocolate.UseVisualStyleBackColor = false;
+            this.Chocolate.Click += new System.EventHandler(this.Chocolate_Click);
+            // 
+            // HotMatcha
+            // 
+            this.HotMatcha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
+            this.HotMatcha.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.HotMatcha.FlatAppearance.BorderSize = 2;
+            this.HotMatcha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HotMatcha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HotMatcha.ForeColor = System.Drawing.Color.White;
+            this.HotMatcha.Image = ((System.Drawing.Image)(resources.GetObject("HotMatcha.Image")));
+            this.HotMatcha.Location = new System.Drawing.Point(609, 142);
+            this.HotMatcha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.HotMatcha.Name = "HotMatcha";
+            this.HotMatcha.Size = new System.Drawing.Size(196, 136);
+            this.HotMatcha.TabIndex = 1;
+            this.HotMatcha.Text = "هوت ماتشا\r\nHot Matcha\r\n15.00";
+            this.HotMatcha.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.HotMatcha.UseVisualStyleBackColor = false;
+            this.HotMatcha.Click += new System.EventHandler(this.HotMatcha_Click);
+            // 
+            // FlatWhite
+            // 
+            this.FlatWhite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
+            this.FlatWhite.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.FlatWhite.FlatAppearance.BorderSize = 2;
+            this.FlatWhite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FlatWhite.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FlatWhite.ForeColor = System.Drawing.Color.White;
+            this.FlatWhite.Image = ((System.Drawing.Image)(resources.GetObject("FlatWhite.Image")));
+            this.FlatWhite.Location = new System.Drawing.Point(811, 142);
+            this.FlatWhite.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.FlatWhite.Name = "FlatWhite";
+            this.FlatWhite.Size = new System.Drawing.Size(196, 136);
+            this.FlatWhite.TabIndex = 1;
+            this.FlatWhite.Text = "فلات وايت\r\nFlat White\r\n14.00";
+            this.FlatWhite.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.FlatWhite.UseVisualStyleBackColor = false;
+            this.FlatWhite.Click += new System.EventHandler(this.FlatWhite_Click);
+            // 
+            // ItalianCoffee
+            // 
+            this.ItalianCoffee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
+            this.ItalianCoffee.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.ItalianCoffee.FlatAppearance.BorderSize = 2;
+            this.ItalianCoffee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ItalianCoffee.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItalianCoffee.ForeColor = System.Drawing.Color.White;
+            this.ItalianCoffee.Image = ((System.Drawing.Image)(resources.GetObject("ItalianCoffee.Image")));
+            this.ItalianCoffee.Location = new System.Drawing.Point(1013, 142);
+            this.ItalianCoffee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ItalianCoffee.Name = "ItalianCoffee";
+            this.ItalianCoffee.Size = new System.Drawing.Size(196, 136);
+            this.ItalianCoffee.TabIndex = 1;
+            this.ItalianCoffee.Text = "قهوة ايطالي\r\nItalian Coffee\r\n15.00";
+            this.ItalianCoffee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ItalianCoffee.UseVisualStyleBackColor = false;
+            this.ItalianCoffee.Click += new System.EventHandler(this.ItalianCoffee_Click);
+            // 
+            // HotMocha
+            // 
+            this.HotMocha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
+            this.HotMocha.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.HotMocha.FlatAppearance.BorderSize = 2;
+            this.HotMocha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HotMocha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HotMocha.ForeColor = System.Drawing.Color.White;
+            this.HotMocha.Image = ((System.Drawing.Image)(resources.GetObject("HotMocha.Image")));
+            this.HotMocha.Location = new System.Drawing.Point(3, 282);
+            this.HotMocha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.HotMocha.Name = "HotMocha";
+            this.HotMocha.Size = new System.Drawing.Size(196, 136);
+            this.HotMocha.TabIndex = 1;
+            this.HotMocha.Text = "هوت موكا\r\nHot Mocha\r\n14.00";
+            this.HotMocha.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.HotMocha.UseVisualStyleBackColor = false;
+            this.HotMocha.Click += new System.EventHandler(this.HotMocha_Click);
+            // 
+            // latte
+            // 
+            this.latte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
+            this.latte.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.latte.FlatAppearance.BorderSize = 2;
+            this.latte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.latte.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.latte.ForeColor = System.Drawing.Color.White;
+            this.latte.Image = ((System.Drawing.Image)(resources.GetObject("latte.Image")));
+            this.latte.Location = new System.Drawing.Point(205, 282);
+            this.latte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.latte.Name = "latte";
+            this.latte.Size = new System.Drawing.Size(196, 136);
+            this.latte.TabIndex = 1;
+            this.latte.Text = "لاتيه\nLatte\n13.00";
+            this.latte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.latte.UseVisualStyleBackColor = false;
+            this.latte.Click += new System.EventHandler(this.latte_Click);
+            // 
+            // Micato
+            // 
+            this.Micato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
+            this.Micato.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.Micato.FlatAppearance.BorderSize = 2;
+            this.Micato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Micato.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Micato.ForeColor = System.Drawing.Color.White;
+            this.Micato.Image = ((System.Drawing.Image)(resources.GetObject("Micato.Image")));
+            this.Micato.Location = new System.Drawing.Point(407, 282);
+            this.Micato.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Micato.Name = "Micato";
+            this.Micato.Size = new System.Drawing.Size(196, 136);
+            this.Micato.TabIndex = 1;
+            this.Micato.Text = "ميكاتو\nMicato\n12.00";
+            this.Micato.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Micato.UseVisualStyleBackColor = false;
+            this.Micato.Click += new System.EventHandler(this.Micato_Click);
+            // 
+            // Cappuccino
+            // 
+            this.Cappuccino.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
+            this.Cappuccino.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.Cappuccino.FlatAppearance.BorderSize = 2;
+            this.Cappuccino.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cappuccino.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cappuccino.ForeColor = System.Drawing.Color.White;
+            this.Cappuccino.Image = ((System.Drawing.Image)(resources.GetObject("Cappuccino.Image")));
+            this.Cappuccino.Location = new System.Drawing.Point(609, 282);
+            this.Cappuccino.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Cappuccino.Name = "Cappuccino";
+            this.Cappuccino.Size = new System.Drawing.Size(196, 136);
+            this.Cappuccino.TabIndex = 1;
+            this.Cappuccino.Text = "كابتشينو\nCappuccino\n12.00";
+            this.Cappuccino.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Cappuccino.UseVisualStyleBackColor = false;
+            this.Cappuccino.Click += new System.EventHandler(this.Cappuccino_Click);
+            // 
+            // LargeTurkishCoffee
+            // 
+            this.LargeTurkishCoffee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
+            this.LargeTurkishCoffee.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.LargeTurkishCoffee.FlatAppearance.BorderSize = 2;
+            this.LargeTurkishCoffee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LargeTurkishCoffee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LargeTurkishCoffee.ForeColor = System.Drawing.Color.White;
+            this.LargeTurkishCoffee.Image = ((System.Drawing.Image)(resources.GetObject("LargeTurkishCoffee.Image")));
+            this.LargeTurkishCoffee.Location = new System.Drawing.Point(811, 282);
+            this.LargeTurkishCoffee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LargeTurkishCoffee.Name = "LargeTurkishCoffee";
+            this.LargeTurkishCoffee.Size = new System.Drawing.Size(196, 136);
+            this.LargeTurkishCoffee.TabIndex = 1;
+            this.LargeTurkishCoffee.Text = "قهوة تركي كبير\nLarge Turkish Coffee\n12.00";
+            this.LargeTurkishCoffee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.LargeTurkishCoffee.UseVisualStyleBackColor = false;
+            this.LargeTurkishCoffee.Click += new System.EventHandler(this.LargeTurkishCoffee_Click_1);
+            // 
+            // Cortage
+            // 
+            this.Cortage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
+            this.Cortage.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.Cortage.FlatAppearance.BorderSize = 2;
+            this.Cortage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cortage.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cortage.ForeColor = System.Drawing.Color.White;
+            this.Cortage.Image = ((System.Drawing.Image)(resources.GetObject("Cortage.Image")));
+            this.Cortage.Location = new System.Drawing.Point(1013, 282);
+            this.Cortage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Cortage.Name = "Cortage";
+            this.Cortage.Size = new System.Drawing.Size(196, 136);
+            this.Cortage.TabIndex = 1;
+            this.Cortage.Text = "كورتاج\nCortage\n12.00";
+            this.Cortage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Cortage.UseVisualStyleBackColor = false;
+            this.Cortage.Click += new System.EventHandler(this.Cortage_Click);
+            // 
+            // SmallTurkishCoffee
+            // 
+            this.SmallTurkishCoffee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
+            this.SmallTurkishCoffee.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.SmallTurkishCoffee.FlatAppearance.BorderSize = 2;
+            this.SmallTurkishCoffee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SmallTurkishCoffee.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SmallTurkishCoffee.ForeColor = System.Drawing.Color.White;
+            this.SmallTurkishCoffee.Image = ((System.Drawing.Image)(resources.GetObject("SmallTurkishCoffee.Image")));
+            this.SmallTurkishCoffee.Location = new System.Drawing.Point(3, 422);
+            this.SmallTurkishCoffee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SmallTurkishCoffee.Name = "SmallTurkishCoffee";
+            this.SmallTurkishCoffee.Size = new System.Drawing.Size(196, 136);
+            this.SmallTurkishCoffee.TabIndex = 1;
+            this.SmallTurkishCoffee.Text = "قهوة تركي صغير\r\nSmall Turkish Coffee\r\n8.00";
+            this.SmallTurkishCoffee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.SmallTurkishCoffee.UseVisualStyleBackColor = false;
+            this.SmallTurkishCoffee.Click += new System.EventHandler(this.SmallTurkishCoffee_Click);
+            // 
+            // Americano
+            // 
+            this.Americano.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
+            this.Americano.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.Americano.FlatAppearance.BorderSize = 2;
+            this.Americano.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Americano.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Americano.ForeColor = System.Drawing.Color.White;
+            this.Americano.Image = ((System.Drawing.Image)(resources.GetObject("Americano.Image")));
+            this.Americano.Location = new System.Drawing.Point(205, 422);
+            this.Americano.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Americano.Name = "Americano";
+            this.Americano.Size = new System.Drawing.Size(196, 136);
+            this.Americano.TabIndex = 1;
+            this.Americano.Text = "امريكانو\nAmericano\n10.00";
+            this.Americano.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Americano.UseVisualStyleBackColor = false;
+            this.Americano.Click += new System.EventHandler(this.Americano_Click);
+            // 
+            // Espresso
+            // 
+            this.Espresso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
+            this.Espresso.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.Espresso.FlatAppearance.BorderSize = 2;
+            this.Espresso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Espresso.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Espresso.ForeColor = System.Drawing.Color.White;
+            this.Espresso.Image = ((System.Drawing.Image)(resources.GetObject("Espresso.Image")));
+            this.Espresso.Location = new System.Drawing.Point(407, 422);
+            this.Espresso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Espresso.Name = "Espresso";
+            this.Espresso.Size = new System.Drawing.Size(196, 136);
+            this.Espresso.TabIndex = 1;
+            this.Espresso.Text = "اسبرسو\nEspresso\n8.00";
+            this.Espresso.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Espresso.UseVisualStyleBackColor = false;
+            this.Espresso.Click += new System.EventHandler(this.Espresso_Click);
+            // 
+            // RedTea
+            // 
+            this.RedTea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
+            this.RedTea.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.RedTea.FlatAppearance.BorderSize = 2;
+            this.RedTea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RedTea.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RedTea.ForeColor = System.Drawing.Color.White;
+            this.RedTea.Image = ((System.Drawing.Image)(resources.GetObject("RedTea.Image")));
+            this.RedTea.Location = new System.Drawing.Point(609, 422);
+            this.RedTea.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.RedTea.Name = "RedTea";
+            this.RedTea.Size = new System.Drawing.Size(196, 136);
+            this.RedTea.TabIndex = 1;
+            this.RedTea.Text = "شاي احمر\nRed Tea\n5.00";
+            this.RedTea.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.RedTea.UseVisualStyleBackColor = false;
+            this.RedTea.Click += new System.EventHandler(this.RedTea_Click);
             // 
             // panelInvoice
             // 
@@ -586,14 +616,14 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(34)))), ((int)(((byte)(51)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(34)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(34)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridView1.Location = new System.Drawing.Point(8, 12);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1647,14 +1677,10 @@
             // 
             // buttonMenu
             // 
-            this.buttonMenu.Location = new System.Drawing.Point(1577, 28);
-            this.buttonMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonMenu.Location = new System.Drawing.Point(0, 0);
             this.buttonMenu.Name = "buttonMenu";
-            this.buttonMenu.Size = new System.Drawing.Size(100, 50);
-            this.buttonMenu.TabIndex = 16;
-            this.buttonMenu.Text = "القائمة";
-            this.buttonMenu.UseVisualStyleBackColor = true;
-            this.buttonMenu.Click += new System.EventHandler(this.buttonMenu_Click);
+            this.buttonMenu.Size = new System.Drawing.Size(75, 23);
+            this.buttonMenu.TabIndex = 2;
             // 
             // panelMenu
             // 
@@ -1663,12 +1689,12 @@
             this.panelMenu.Controls.Add(this.buttonReports);
             this.panelMenu.Controls.Add(this.buttonManageUsers);
             this.panelMenu.Controls.Add(this.buttonLogout);
-            this.panelMenu.Location = new System.Drawing.Point(1460, 29);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelMenu.Location = new System.Drawing.Point(1460, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(227, 789);
+            this.panelMenu.Size = new System.Drawing.Size(227, 912);
             this.panelMenu.TabIndex = 17;
-            this.panelMenu.Visible = false;
             // 
             // buttonSettings
             // 
@@ -1714,36 +1740,6 @@
             this.buttonLogout.UseVisualStyleBackColor = true;
             this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.SaudiCoffeePot);
-            this.flowLayoutPanel1.Controls.Add(this.ArabicCoffeewithDates);
-            this.flowLayoutPanel1.Controls.Add(this.KarakTea);
-            this.flowLayoutPanel1.Controls.Add(this.TeaKettle);
-            this.flowLayoutPanel1.Controls.Add(this.TeaThermos);
-            this.flowLayoutPanel1.Controls.Add(this.button14);
-            this.flowLayoutPanel1.Controls.Add(this.FrenchCoffee);
-            this.flowLayoutPanel1.Controls.Add(this.SensationLatte);
-            this.flowLayoutPanel1.Controls.Add(this.Chocolate);
-            this.flowLayoutPanel1.Controls.Add(this.HotMatcha);
-            this.flowLayoutPanel1.Controls.Add(this.FlatWhite);
-            this.flowLayoutPanel1.Controls.Add(this.ItalianCoffee);
-            this.flowLayoutPanel1.Controls.Add(this.HotMocha);
-            this.flowLayoutPanel1.Controls.Add(this.latte);
-            this.flowLayoutPanel1.Controls.Add(this.Micato);
-            this.flowLayoutPanel1.Controls.Add(this.Cappuccino);
-            this.flowLayoutPanel1.Controls.Add(this.LargeTurkishCoffee);
-            this.flowLayoutPanel1.Controls.Add(this.Cortage);
-            this.flowLayoutPanel1.Controls.Add(this.SmallTurkishCoffee);
-            this.flowLayoutPanel1.Controls.Add(this.Americano);
-            this.flowLayoutPanel1.Controls.Add(this.Espresso);
-            this.flowLayoutPanel1.Controls.Add(this.RedTea);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1258, 702);
-            this.flowLayoutPanel1.TabIndex = 2;
-            // 
             // Customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1757,7 +1753,6 @@
             this.Controls.Add(this.buttonSuspendInvoice);
             this.Controls.Add(this.Dessertspanel);
             this.Controls.Add(this.Mojitopanel);
-            this.Controls.Add(this.DripCoffeePanel);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panelSummary);
@@ -1766,6 +1761,7 @@
             this.Controls.Add(this.buttonDeleteItem);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelInvoiceContainer);
+            this.Controls.Add(this.DripCoffeePanel);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Customer";
@@ -1773,6 +1769,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Customer_Load);
             this.panelHotDrinks.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.panelInvoice.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panelSummary.ResumeLayout(false);
@@ -1784,7 +1781,6 @@
             this.Mojitopanel.ResumeLayout(false);
             this.Dessertspanel.ResumeLayout(false);
             this.panelMenu.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

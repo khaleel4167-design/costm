@@ -1373,12 +1373,6 @@ namespace Customer
             }
         }
 
-        private void buttonMenu_Click(object sender, EventArgs e)
-        {
-            // إظهار / إخفاء البانل مثل الـ toggle
-            panelMenu.Visible = !panelMenu.Visible;
-        }
-
         private void buttonLogout_Click(object sender, EventArgs e)
         {
             var result = MessageBox.Show(

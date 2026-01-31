@@ -1,76 +1,76 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Customer\\",
+  "WorkspaceRootPath": "D:\\faris\\casher\\costm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\Customer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\Customer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|d:\\faris\\casher\\costm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|d:\\customer\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\faris\\casher\\costm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\faris\\casher\\costm\\appdatamodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:appdatamodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\faris\\casher\\costm\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\Customer\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\faris\\casher\\costm\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\Customer\\appdatamodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:appdatamodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Customer||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\Customer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\faris\\casher\\costm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\Customer\\usermanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\faris\\casher\\costm\\usermanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:usermanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\Customer\\suspendedinvoicesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\faris\\casher\\costm\\suspendedinvoicesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:suspendedinvoicesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\Customer\\userstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\faris\\casher\\costm\\userstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:userstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\Customer\\suspendedinvoicesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\faris\\casher\\costm\\suspendedinvoicesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:suspendedinvoicesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\Customer\\reportsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\faris\\casher\\costm\\reportsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:reportsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\Customer\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\faris\\casher\\costm\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\Customer\\appdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\faris\\casher\\costm\\appdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:appdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\Customer\\usermanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\faris\\casher\\costm\\usermanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:usermanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\Customer\\reportsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\faris\\casher\\costm\\reportsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:reportsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\Customer\\reportsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\faris\\casher\\costm\\reportsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:reportsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\Customer\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|D:\\faris\\casher\\costm\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -81,16 +81,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -104,25 +96,33 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\Customer\\Form1.cs",
+              "DocumentMoniker": "D:\\faris\\casher\\costm\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\Customer\\Form1.cs",
+              "ToolTip": "D:\\faris\\casher\\costm\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAHABAAAAAAAAAAAMwIUBAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAFYFAAAAAAAAAAAQwF0FAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-05T11:38:27.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\Customer\\Form1.cs",
+              "DocumentMoniker": "D:\\faris\\casher\\costm\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\Customer\\Form1.cs [Design]",
+              "ToolTip": "D:\\faris\\casher\\costm\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-05T11:29:16.192Z",
@@ -130,11 +130,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "AppDataModels.cs",
-              "DocumentMoniker": "D:\\Customer\\AppDataModels.cs",
+              "DocumentMoniker": "D:\\faris\\casher\\costm\\AppDataModels.cs",
               "RelativeDocumentMoniker": "AppDataModels.cs",
-              "ToolTip": "D:\\Customer\\AppDataModels.cs",
+              "ToolTip": "D:\\faris\\casher\\costm\\AppDataModels.cs",
               "RelativeToolTip": "AppDataModels.cs",
               "ViewState": "AgIAAIIAAAAAAAAAAADwv5EAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -142,36 +142,34 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "SettingsForm.cs [Design]",
-              "DocumentMoniker": "D:\\Customer\\SettingsForm.cs",
+              "DocumentMoniker": "D:\\faris\\casher\\costm\\SettingsForm.cs",
               "RelativeDocumentMoniker": "SettingsForm.cs",
               "ToolTip": "D:\\Customer\\SettingsForm.cs [Design]",
-              "RelativeToolTip": "SettingsForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\Customer\\SettingsForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T22:10:30.007Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-12-03T22:10:30.007Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SettingsForm.cs",
-              "DocumentMoniker": "D:\\Customer\\SettingsForm.cs",
+              "DocumentMoniker": "D:\\faris\\casher\\costm\\SettingsForm.cs",
               "RelativeDocumentMoniker": "SettingsForm.cs",
-              "ToolTip": "D:\\Customer\\SettingsForm.cs",
+              "ToolTip": "D:\\faris\\casher\\costm\\SettingsForm.cs",
               "RelativeToolTip": "SettingsForm.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAzwJUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T22:16:04.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-03T22:16:04.965Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "AppDataStore.cs",
-              "DocumentMoniker": "D:\\Customer\\AppDataStore.cs",
+              "DocumentMoniker": "D:\\faris\\casher\\costm\\AppDataStore.cs",
               "RelativeDocumentMoniker": "AppDataStore.cs",
-              "ToolTip": "D:\\Customer\\AppDataStore.cs",
+              "ToolTip": "D:\\faris\\casher\\costm\\AppDataStore.cs",
               "RelativeToolTip": "AppDataStore.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAmwD8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -181,7 +179,7 @@
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "UserManagementForm.cs [Design]",
-              "DocumentMoniker": "D:\\Customer\\UserManagementForm.cs",
+              "DocumentMoniker": "D:\\faris\\casher\\costm\\UserManagementForm.cs",
               "RelativeDocumentMoniker": "UserManagementForm.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Customer\\UserManagementForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -191,9 +189,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "UserManagementForm.cs",
-              "DocumentMoniker": "D:\\Customer\\UserManagementForm.cs",
+              "DocumentMoniker": "D:\\faris\\casher\\costm\\UserManagementForm.cs",
               "RelativeDocumentMoniker": "UserManagementForm.cs",
-              "ToolTip": "D:\\Customer\\UserManagementForm.cs",
+              "ToolTip": "D:\\faris\\casher\\costm\\UserManagementForm.cs",
               "RelativeToolTip": "UserManagementForm.cs",
               "ViewState": "AgIAAO0AAAAAAAAAAAAqwAsBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -203,9 +201,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "UserStore.cs",
-              "DocumentMoniker": "D:\\Customer\\UserStore.cs",
+              "DocumentMoniker": "D:\\faris\\casher\\costm\\UserStore.cs",
               "RelativeDocumentMoniker": "UserStore.cs",
-              "ToolTip": "D:\\Customer\\UserStore.cs",
+              "ToolTip": "D:\\faris\\casher\\costm\\UserStore.cs",
               "RelativeToolTip": "UserStore.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAIwBUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -215,7 +213,7 @@
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "D:\\Customer\\LoginForm.cs",
+              "DocumentMoniker": "D:\\faris\\casher\\costm\\LoginForm.cs",
               "RelativeDocumentMoniker": "LoginForm.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Customer\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -225,9 +223,9 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "LoginForm.cs",
-              "DocumentMoniker": "D:\\Customer\\LoginForm.cs",
+              "DocumentMoniker": "D:\\faris\\casher\\costm\\LoginForm.cs",
               "RelativeDocumentMoniker": "LoginForm.cs",
-              "ToolTip": "D:\\Customer\\LoginForm.cs",
+              "ToolTip": "D:\\faris\\casher\\costm\\LoginForm.cs",
               "RelativeToolTip": "LoginForm.cs",
               "ViewState": "AgIAAEIAAAAAAAAAAAAiwFgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -237,7 +235,7 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "ReportsForm.cs [Design]",
-              "DocumentMoniker": "D:\\Customer\\ReportsForm.cs",
+              "DocumentMoniker": "D:\\faris\\casher\\costm\\ReportsForm.cs",
               "RelativeDocumentMoniker": "ReportsForm.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Customer\\ReportsForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -247,9 +245,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "ReportsForm.cs",
-              "DocumentMoniker": "D:\\Customer\\ReportsForm.cs",
+              "DocumentMoniker": "D:\\faris\\casher\\costm\\ReportsForm.cs",
               "RelativeDocumentMoniker": "ReportsForm.cs",
-              "ToolTip": "D:\\Customer\\ReportsForm.cs",
+              "ToolTip": "D:\\faris\\casher\\costm\\ReportsForm.cs",
               "RelativeToolTip": "ReportsForm.cs",
               "ViewState": "AgIAAH0AAAAAAAAAAAAqwJUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -259,9 +257,9 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "SuspendedInvoicesForm.cs",
-              "DocumentMoniker": "D:\\Customer\\SuspendedInvoicesForm.cs",
+              "DocumentMoniker": "D:\\faris\\casher\\costm\\SuspendedInvoicesForm.cs",
               "RelativeDocumentMoniker": "SuspendedInvoicesForm.cs",
-              "ToolTip": "D:\\Customer\\SuspendedInvoicesForm.cs",
+              "ToolTip": "D:\\faris\\casher\\costm\\SuspendedInvoicesForm.cs",
               "RelativeToolTip": "SuspendedInvoicesForm.cs",
               "ViewState": "AgIAAHYAAAAAAAAAAAAiwIwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -271,7 +269,7 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "SuspendedInvoicesForm.cs [Design]",
-              "DocumentMoniker": "D:\\Customer\\SuspendedInvoicesForm.cs",
+              "DocumentMoniker": "D:\\faris\\casher\\costm\\SuspendedInvoicesForm.cs",
               "RelativeDocumentMoniker": "SuspendedInvoicesForm.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Customer\\SuspendedInvoicesForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -281,9 +279,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Customer\\Program.cs",
+              "DocumentMoniker": "D:\\faris\\casher\\costm\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Customer\\Program.cs",
+              "ToolTip": "D:\\faris\\casher\\costm\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAA3wBUAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -293,9 +291,9 @@
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "ReportsForm.Designer.cs",
-              "DocumentMoniker": "D:\\Customer\\ReportsForm.Designer.cs",
+              "DocumentMoniker": "D:\\faris\\casher\\costm\\ReportsForm.Designer.cs",
               "RelativeDocumentMoniker": "ReportsForm.Designer.cs",
-              "ToolTip": "D:\\Customer\\ReportsForm.Designer.cs",
+              "ToolTip": "D:\\faris\\casher\\costm\\ReportsForm.Designer.cs",
               "RelativeToolTip": "ReportsForm.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -305,9 +303,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Customer",
-              "DocumentMoniker": "D:\\Customer\\Customer.csproj",
+              "DocumentMoniker": "D:\\faris\\casher\\costm\\Customer.csproj",
               "RelativeDocumentMoniker": "Customer.csproj",
-              "ToolTip": "D:\\Customer\\Customer.csproj",
+              "ToolTip": "D:\\faris\\casher\\costm\\Customer.csproj",
               "RelativeToolTip": "Customer.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-11-07T13:56:48.68Z"
