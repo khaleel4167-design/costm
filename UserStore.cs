@@ -6,12 +6,6 @@ namespace Customer
     
 
     // كلاس يمثل حساب مستخدم واحد
-    public class UserAccount
-    {
-        public string UserName { get; set; }   // اسم المستخدم اللي يظهر في الكومبو بوكس
-        public string Password { get; set; }   // الرمز/كلمة المرور
-        public UserRole Role { get; set; }  // Admin أو Employee
-    }
 
     // مخزن المستخدمين (ثابت ومتاح لكل المشروع)
     public static class UserStore

@@ -8,7 +8,7 @@ namespace Customer
     public partial class SuspendedInvoicesForm : Form
     {
         // قائمة الفواتير المعلّقة القادمة من شاشة الكاشير
-        private readonly List<InvoiceRecord> _invoices;
+        private readonly List<InvoiceRecord> _invoices = new List<InvoiceRecord>();
 
         // الفاتورة التي يختارها المستخدم لاسترجاعها
         public InvoiceRecord SelectedInvoice { get; private set; }
@@ -16,10 +16,35 @@ namespace Customer
         public SuspendedInvoicesForm(List<InvoiceRecord> invoices)
         {
             InitializeComponent();
-            _invoices = invoices ?? new List<InvoiceRecord>();  
+
+            // تحميل الفواتير المعلقة من قاعدة البيانات
+            LoadSuspendedInvoicesFromDatabase();
 
             InitializeGrid();
             LoadInvoices();
+        }
+
+        private void LoadSuspendedInvoicesFromDatabase()
+        {
+            try
+            {
+                using (var db = new AppDbContext())
+                {
+                    // تحميل الفواتير المعلقة فقط
+                    var suspendedInvoices = db.Invoices
+                        .Where(i => i.Status == InvoiceStatus.Suspended)
+                        .OrderByDescending(i => i.Date)
+                        .ToList();
+
+                    _invoices.Clear();
+                    _invoices.AddRange(suspendedInvoices);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"خطأ في تحميل الفواتير المعلقة: {ex.Message}", "خطأ",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         private void SuspendedInvoicesForm_Load(object sender, EventArgs e)
         {

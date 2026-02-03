@@ -44,7 +44,7 @@ namespace Customer
         List<Product> products = new List<Product>();
         // 🧾 فاتورة معلّقة واحدة
         // 🧾 قائمة الفواتير المعلقة
-      
+
 
 
         // تعريف كلاس الفاتورة
@@ -246,7 +246,10 @@ namespace Customer
 
         private void Customer_Load(object sender, EventArgs e)
         {
-          
+
+
+            // التأكد من أن القائمة الجانبية في المقدمة حتى لا تغطيها العناصر الأخرى
+            panelMenu.BringToFront();
 
             Image smallImage = new Bitmap(Properties.Resources.trash_red_24, new Size(24, 24));
 
@@ -422,7 +425,7 @@ namespace Customer
             }
         }
         // 🔘 الأزرار
-        
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -440,7 +443,7 @@ namespace Customer
             panelHotDrinks.Visible = false;
             DripCoffeePanel.Visible = false;
             panel3.Visible = true;
-           
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -782,7 +785,7 @@ namespace Customer
             // طباعة على الطابعة
             PrintInvoiceToPrinter();
 
-            // حفظ الفاتورة في JSON كما عندك سابقاً
+            // حفظ الفاتورة في قاعدة البيانات
             var record = CreateInvoiceRecord(InvoiceStatus.Paid);
             AppDataStore.Current.Invoices.Add(record);
             AppDataStore.Current.InvoicesHistory.Add(record);
@@ -799,7 +802,7 @@ namespace Customer
         }
 
         private void panelInvoiceContainer_Paint(object sender, PaintEventArgs e)
-  
+
         {
             Panel pnl = sender as Panel;
 
@@ -844,7 +847,7 @@ namespace Customer
 
         private void panelSummary_Paint_Paint(object sender, PaintEventArgs e)
         {
-         
+
             // 👇 إعدادات الشكل
             int borderRadius = 12; // درجة التقوّس (كلما زاد الرقم زادت الانحناءات)
             int borderSize = 3;    // سماكة الحدود
@@ -901,7 +904,7 @@ namespace Customer
             labelSubtotal.Text = $"{subtotalBeforeVat:0.00} ر.س";
             labelTax.Text = $"{tax:0.00} ر.س";
             labelTotal.Text = $"{grandTotal:0.00} ر.س";
-        
+
         }
         // 🧾 تعليق الفاتورة الحالية
         // 🧾 تعليق الفاتورة الحالية (يضيفها لقائمة الفواتير المعلقة)
@@ -933,17 +936,32 @@ namespace Customer
                 return;
             }
 
-            // ننشئ سجل فاتورة بالحالة "معلّقة"
-            var invRecord = CreateInvoiceRecord(InvoiceStatus.Suspended);
+            try
+            {
+                // ننشئ سجل فاتورة بالحالة "معلّقة"
+                var invRecord = CreateInvoiceRecord(InvoiceStatus.Suspended);
 
-            // لو تحتاج نسخة كاملة من الفاتورة المعلّقة (للشاشة الصغيرة)
-            AppDataStore.Current.SuspendedInvoices.Add(invRecord);
-            AppDataStore.Save();
+                // حفظ الفاتورة في قاعدة البيانات
+                using (var db = new AppDbContext())
+                {
+                    db.Invoices.Add(invRecord);
+                    db.SaveChanges();
+                }
 
-            products.Clear();
-            RefreshGrid();
+                // تحديث AppDataStore للتوافق مع الكود القديم
+                AppDataStore.Current.SuspendedInvoices.Add(invRecord);
+                AppDataStore.Save();
 
-            MessageBox.Show($"تم تعليق الفاتورة رقم {invRecord.Number}.");
+                products.Clear();
+                RefreshGrid();
+
+                MessageBox.Show($"تم تعليق الفاتورة رقم {invRecord.Number}.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"خطأ في تعليق الفاتورة: {ex.Message}", "خطأ",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
 
@@ -994,10 +1012,28 @@ namespace Customer
                         })
                         .ToList();
 
-                    // 4) حذف الفاتورة من قائمة الفواتير المعلّقة
+                    // 4) حذف الفاتورة من قاعدة البيانات والقائمة المعلّقة
+                    try
+                    {
+                        using (var db = new AppDbContext())
+                        {
+                            var invoiceToDelete = db.Invoices.Find(inv.Number);
+                            if (invoiceToDelete != null)
+                            {
+                                db.Invoices.Remove(invoiceToDelete);
+                                db.SaveChanges();
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"تحذير: لم يتم حذف الفاتورة من قاعدة البيانات: {ex.Message}",
+                            "تحذير", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+
                     AppDataStore.Current.SuspendedInvoices
                         .RemoveAll(i => i.Number == inv.Number);
-                    
+
                     AppDataStore.Save();
 
                     // 5) تحديث الجدول والمجاميع
@@ -1086,7 +1122,7 @@ namespace Customer
             AddProduct("بنش لاتيه بارد", 17);
         }
 
-      
+
 
         private void RedTea_Click(object sender, EventArgs e)
         {
@@ -1113,7 +1149,7 @@ namespace Customer
             AddProduct("كورتاج", 12);
         }
 
-       
+
 
         private void Cappuccino_Click(object sender, EventArgs e)
         {
@@ -1390,7 +1426,7 @@ namespace Customer
         }
 
 
-       
+
 
         private void buttonManageUsers_Click(object sender, EventArgs e)
         {
@@ -1411,14 +1447,9 @@ namespace Customer
 
         private void buttonReports_Click(object sender, EventArgs e)
         {
-          
-            // لو حاب تمرر كل الفواتير المسجلة في AppDataStore
-            var invoices = AppDataStore.Current.Invoices;
-
             using (var frm = new ReportsForm())
             {
-                // لو حاب ترسل الفواتير للفورم نضبطه بعد شوي
-                frm.ShowDialog(this);     // يفتح الفورم كنافذة منبثقة
+                frm.ShowDialog(this);
             }
         }
 

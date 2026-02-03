@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customer));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonSuspendInvoice = new System.Windows.Forms.Button();
+            this.buttonResumeInvoice = new System.Windows.Forms.Button();
             this.panelHotDrinks = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SaudiCoffeePot = new System.Windows.Forms.Button();
@@ -111,8 +113,6 @@
             this.HibaDatesCakeSmallChocolate = new System.Windows.Forms.Button();
             this.HibaDatesCakeLargeChocolate = new System.Windows.Forms.Button();
             this.ChocolateBox = new System.Windows.Forms.Button();
-            this.buttonSuspendInvoice = new System.Windows.Forms.Button();
-            this.buttonResumeInvoice = new System.Windows.Forms.Button();
             this.buttonPrintInvoice = new System.Windows.Forms.Button();
             this.buttonCancelInvoice = new System.Windows.Forms.Button();
             this.buttonDeleteItem = new System.Windows.Forms.Button();
@@ -146,6 +146,34 @@
             this.panel1.Size = new System.Drawing.Size(318, 50);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // buttonSuspendInvoice
+            // 
+            this.buttonSuspendInvoice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(34)))), ((int)(((byte)(51)))));
+            this.buttonSuspendInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSuspendInvoice.ForeColor = System.Drawing.Color.White;
+            this.buttonSuspendInvoice.Location = new System.Drawing.Point(168, 2);
+            this.buttonSuspendInvoice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonSuspendInvoice.Name = "buttonSuspendInvoice";
+            this.buttonSuspendInvoice.Size = new System.Drawing.Size(137, 46);
+            this.buttonSuspendInvoice.TabIndex = 14;
+            this.buttonSuspendInvoice.Text = "تعليق فاتورة";
+            this.buttonSuspendInvoice.UseVisualStyleBackColor = false;
+            this.buttonSuspendInvoice.Click += new System.EventHandler(this.buttonSuspendInvoice_Click);
+            // 
+            // buttonResumeInvoice
+            // 
+            this.buttonResumeInvoice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(34)))), ((int)(((byte)(51)))));
+            this.buttonResumeInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonResumeInvoice.ForeColor = System.Drawing.Color.White;
+            this.buttonResumeInvoice.Location = new System.Drawing.Point(11, 2);
+            this.buttonResumeInvoice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonResumeInvoice.Name = "buttonResumeInvoice";
+            this.buttonResumeInvoice.Size = new System.Drawing.Size(151, 46);
+            this.buttonResumeInvoice.TabIndex = 14;
+            this.buttonResumeInvoice.Text = "استرجاع فاتورة";
+            this.buttonResumeInvoice.UseVisualStyleBackColor = false;
+            this.buttonResumeInvoice.Click += new System.EventHandler(this.buttonResumeInvoice_Click);
             // 
             // panelHotDrinks
             // 
@@ -1593,34 +1621,6 @@
             this.ChocolateBox.UseVisualStyleBackColor = false;
             this.ChocolateBox.Click += new System.EventHandler(this.ChocolateBox_Click);
             // 
-            // buttonSuspendInvoice
-            // 
-            this.buttonSuspendInvoice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(34)))), ((int)(((byte)(51)))));
-            this.buttonSuspendInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSuspendInvoice.ForeColor = System.Drawing.Color.White;
-            this.buttonSuspendInvoice.Location = new System.Drawing.Point(168, 2);
-            this.buttonSuspendInvoice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonSuspendInvoice.Name = "buttonSuspendInvoice";
-            this.buttonSuspendInvoice.Size = new System.Drawing.Size(137, 46);
-            this.buttonSuspendInvoice.TabIndex = 14;
-            this.buttonSuspendInvoice.Text = "تعليق فاتورة";
-            this.buttonSuspendInvoice.UseVisualStyleBackColor = false;
-            this.buttonSuspendInvoice.Click += new System.EventHandler(this.buttonSuspendInvoice_Click);
-            // 
-            // buttonResumeInvoice
-            // 
-            this.buttonResumeInvoice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(34)))), ((int)(((byte)(51)))));
-            this.buttonResumeInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonResumeInvoice.ForeColor = System.Drawing.Color.White;
-            this.buttonResumeInvoice.Location = new System.Drawing.Point(11, 2);
-            this.buttonResumeInvoice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonResumeInvoice.Name = "buttonResumeInvoice";
-            this.buttonResumeInvoice.Size = new System.Drawing.Size(151, 46);
-            this.buttonResumeInvoice.TabIndex = 14;
-            this.buttonResumeInvoice.Text = "استرجاع فاتورة";
-            this.buttonResumeInvoice.UseVisualStyleBackColor = false;
-            this.buttonResumeInvoice.Click += new System.EventHandler(this.buttonResumeInvoice_Click);
-            // 
             // buttonPrintInvoice
             // 
             this.buttonPrintInvoice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -1703,7 +1703,7 @@
             // 
             // buttonReports
             // 
-            this.buttonReports.Location = new System.Drawing.Point(31, 401);
+            this.buttonReports.Location = new System.Drawing.Point(31, 254);
             this.buttonReports.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonReports.Name = "buttonReports";
             this.buttonReports.Size = new System.Drawing.Size(164, 66);

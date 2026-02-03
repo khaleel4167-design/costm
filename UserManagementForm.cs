@@ -10,6 +10,7 @@ namespace Customer
     public partial class UserManagementForm : Form
     {
         private BindingList<UserAccount> _bindingUsers;
+
         private bool VerifyAdminPassword()
         {
             string input = Microsoft.VisualBasic.Interaction.InputBox(
@@ -21,22 +22,24 @@ namespace Customer
             if (string.IsNullOrEmpty(input))
                 return false;
 
-            // نحضر حساب الأدمن الحقيقي من JSON
-            var admin = AppDataStore.Current.Users
-                .FirstOrDefault(u => u.Role == UserRole.Admin);
-
-            if (admin == null)
+            // نحضر حساب الأدمن الحقيقي من قاعدة البيانات
+            using (var db = new AppDbContext())
             {
-                MessageBox.Show("لا يوجد حساب أدمن مسجل.", "خطأ",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-            }
+                var admin = db.Users.FirstOrDefault(u => u.Role == UserRole.Admin);
 
-            if (input != admin.Password)
-            {
-                MessageBox.Show("رمز الأدمن غير صحيح.", "رفض",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
+                if (admin == null)
+                {
+                    MessageBox.Show("لا يوجد حساب أدمن مسجل.", "خطأ",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+
+                if (input != admin.Password)
+                {
+                    MessageBox.Show("رمز الأدمن غير صحيح.", "رفض",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
+                }
             }
 
             return true;
@@ -48,10 +51,11 @@ namespace Customer
             SetupGrid();
             LoadUsers();
         }
+
         private void UserManagementForm_Load(object sender, EventArgs e)
         {
             // تكبير الصفوف
-            dataGridViewUsers.RowTemplate.Height = 70;   // ← غيّر الرقم كما تريد
+            dataGridViewUsers.RowTemplate.Height = 70;
 
             // تكبير رؤوس الأعمدة
             dataGridViewUsers.ColumnHeadersHeight = 60;
@@ -68,9 +72,7 @@ namespace Customer
 
             // تحسين اللمس
             dataGridViewUsers.ScrollBars = ScrollBars.Both;
-
         }
-
 
         private void SetupGrid()
         {
@@ -90,7 +92,6 @@ namespace Customer
                 DataPropertyName = "UserName",
                 HeaderText = "اسم المستخدم",
                 Width = 150
-                
             };
 
             // عمود كلمة المرور
@@ -119,39 +120,93 @@ namespace Customer
 
         private void LoadUsers()
         {
-            MessageBox.Show("Users count: " + AppDataStore.Current.Users.Count);
+            try
+            {
+                using (var db = new AppDbContext())
+                {
+                    // جلب قائمة المستخدمين من قاعدة البيانات
+                    var usersList = db.Users.ToList();
 
-            _bindingUsers = new BindingList<UserAccount>(
-                AppDataStore.Current.Users
-                    .Select(u => new UserAccount
-                    {
-                        UserName = u.UserName,
-                        Password = u.Password,
-                        Role = u.Role
-                    }).ToList()
-            );
+                    // تحويل البيانات إلى BindingList
+                    _bindingUsers = new BindingList<UserAccount>(
+                        usersList.Select(u => new UserAccount
+                        {
+                            UserName = u.UserName,
+                            Password = u.Password,
+                            Role = u.Role
+                        }).ToList()
+                    );
 
-            dataGridViewUsers.DataSource = _bindingUsers;
+                    // ربط القائمة بالـ DataGridView
+                    dataGridViewUsers.DataSource = _bindingUsers;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("خطأ أثناء تحميل المستخدمين: " + ex.Message);
+            }
         }
 
         private void buttonSaveUsers_Click(object sender, EventArgs e)
         {
-            dataGridViewUsers.EndEdit();
+            try
+            {
+                dataGridViewUsers.EndEdit();
 
-            // نحدث القائمة الأساسية
-            AppDataStore.Current.Users = _bindingUsers
-                .Select(u => new UserInfo
+                using (var db = new AppDbContext())
                 {
-                    UserName = u.UserName,
-                    Password = u.Password,
-                    Role = u.Role
-                }).ToList();
+                    // جلب جميع المستخدمين الحاليين من قاعدة البيانات
+                    var existingUsers = db.Users.ToList();
 
-            AppDataStore.Save();
+                    // حذف المستخدمين الذين تم حذفهم من الجدول
+                    var currentUserNames = _bindingUsers.Select(u => u.UserName).ToList();
+                    var usersToDelete = existingUsers.Where(u => !currentUserNames.Contains(u.UserName)).ToList();
 
+                    foreach (var userToDelete in usersToDelete)
+                    {
+                        db.Users.Remove(userToDelete);
+                    }
 
-            MessageBox.Show("تم حفظ المستخدمين بنجاح.",
-                "تم", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // إضافة أو تحديث المستخدمين
+                    foreach (var user in _bindingUsers)
+                    {
+                        if (string.IsNullOrWhiteSpace(user.UserName))
+                            continue;
+
+                        var existingUser = db.Users.Find(user.UserName);
+
+                        if (existingUser == null)
+                        {
+                            // مستخدم جديد
+                            db.Users.Add(new UserInfo
+                            {
+                                UserName = user.UserName,
+                                Password = user.Password ?? "",
+                                Role = user.Role
+                            });
+                        }
+                        else
+                        {
+                            // تحديث مستخدم موجود
+                            existingUser.Password = user.Password ?? "";
+                            existingUser.Role = user.Role;
+                        }
+                    }
+
+                    db.SaveChanges();
+
+                    // تحديث AppDataStore
+                    AppDataStore.Current.Users = db.Users.ToList();
+                }
+
+                MessageBox.Show("تم حفظ المستخدمين بنجاح في قاعدة البيانات.",
+                    "تم", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"خطأ في الحفظ: {ex.Message}",
+                    "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
@@ -161,35 +216,7 @@ namespace Customer
 
         private void buttonSaveUsers_Click_1(object sender, EventArgs e)
         {
-            dataGridViewUsers.EndEdit();
-
-            var list = new List<UserInfo>();
-
-            foreach (DataGridViewRow row in dataGridViewUsers.Rows)
-            {
-                if (row.IsNewRow) continue;
-
-                string name = row.Cells["UserNameColumn"].Value?.ToString();
-                string pass = row.Cells["PasswordColumn"].Value?.ToString();
-                string roleStr = row.Cells["RoleColumn"].Value?.ToString();
-
-                if (string.IsNullOrWhiteSpace(name)) continue;
-
-                if (!Enum.TryParse<UserRole>(roleStr, out var role))
-                    role = UserRole.Employee;
-
-                list.Add(new UserInfo
-                {
-                    UserName = name,
-                    Password = pass,
-                    Role = role
-                });
-            }
-
-
-            AppDataStore.Current.Users = list;
-            AppDataStore.Save();
-            MessageBox.Show("تم حفظ المستخدمين بنجاح.");
+            buttonSaveUsers_Click(sender, e);
         }
 
         private void buttonClose_Click_1(object sender, EventArgs e)
@@ -199,12 +226,11 @@ namespace Customer
 
         private void buttonDeleteUser_Click(object sender, EventArgs e)
         {
-
             // التحقق من رمز الأدمن قبل الحذف
             if (!VerifyAdminPassword())
                 return;
 
-            // جلب الصف المحدد بشكل صحيح
+            // جلب الصف المحدد
             var row = dataGridViewUsers.CurrentRow;
             if (row == null || row.IsNewRow)
             {
@@ -247,21 +273,38 @@ namespace Customer
             if (confirm != DialogResult.Yes)
                 return;
 
-            // حذف المستخدم
-            _bindingUsers.Remove(userInfo);
-
-            // حفظ التغييرات
-            AppDataStore.Current.Users = _bindingUsers.Select(u => new UserInfo
+            try
             {
-                UserName = u.UserName,
-                Password = u.Password,
-                Role = u.Role
-            }).ToList();
+                // حذف من قاعدة البيانات
+                using (var db = new AppDbContext())
+                {
+                    var userToDelete = db.Users.Find(selectedUser);
+                    if (userToDelete != null)
+                    {
+                        db.Users.Remove(userToDelete);
+                        db.SaveChanges();
+                    }
+                }
 
-            AppDataStore.Save();
+                // حذف من الجدول
+                _bindingUsers.Remove(userInfo);
 
-            MessageBox.Show("تم حذف المستخدم بنجاح.", "تم",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                // تحديث AppDataStore
+                AppDataStore.Current.Users = _bindingUsers.Select(u => new UserInfo
+                {
+                    UserName = u.UserName,
+                    Password = u.Password,
+                    Role = u.Role
+                }).ToList();
+
+                MessageBox.Show("تم حذف المستخدم بنجاح من قاعدة البيانات.", "تم",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"خطأ في الحذف: {ex.Message}",
+                    "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

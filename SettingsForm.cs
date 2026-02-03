@@ -75,7 +75,6 @@ namespace Customer
                 AppDataStore.Current.StoreLogoBase64 = _logoBase64;
 
                 AppDataStore.Save();
-                MessageBox.Show("تم حفظ JSON", "✔", MessageBoxButtons.OK);
 
                 MessageBox.Show("✔ تم حفظ الإعدادات بنجاح",
                     "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -126,7 +125,8 @@ namespace Customer
         }
 
         private void btnSelectPrinter_Click(object sender, EventArgs e)
-        {   PrintDialog dlg = new PrintDialog();
+        {
+            PrintDialog dlg = new PrintDialog();
 
             // لو فيه طابعة محفوظة من قبل نحطها افتراضياً
             if (!string.IsNullOrEmpty(AppDataStore.Current.PrinterName))

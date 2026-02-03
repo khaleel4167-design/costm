@@ -14,51 +14,63 @@ namespace Customer
 
         private void ReportsForm_Load(object sender, EventArgs e)
         {
+            try
+            {
+                using (var db = new AppDbContext())
+                {
+                    // تحميل جميع الفواتير من قاعدة البيانات
+                    var list = db.Invoices
+                        .Where(i => i.Status == InvoiceStatus.Paid ||
+                                    i.Status == InvoiceStatus.Canceled)
+                        .OrderBy(i => i.Number)
+                        .ToList()
+                        .Select(i => new
+                        {
+                            i.Number,
+                            Date = i.Date.ToShortDateString(),
+                            Time = i.Date.ToString("HH:mm"),
+                            i.UserName,
 
-            // نقرأ الفواتير من AppDataStore
-            var list = AppDataStore.Current.Invoices
-             .Concat(AppDataStore.Current.CanceledInvoices)   // 👈 دمج الفواتير الملغاة
-             .OrderBy(i => i.Number)
-             .Select(i => new
-             {
-                 i.Number,
-                 Date = i.Date.ToShortDateString(),
-                 Time = i.Date.ToString("HH:mm"),
-                 i.UserName,
+                            // ترجمة الدور
+                            RoleText = i.Role == UserRole.Admin ? "مسؤول" : "موظف",
 
-                 // ترجمة الدور
-                 RoleText = i.Role == UserRole.Admin ? "مسؤول" : "موظف",
+                            ItemsCount = i.ItemsCount,     // عدد الأصناف
+                            i.SubTotal,
+                            i.Tax,
+                            i.GrandTotal,
 
-                 ItemsCount = i.ItemsCount,     // عدد الأصناف
-                 i.SubTotal,
-                 i.Tax,
-                 i.GrandTotal,
+                            // ترجمة الحالة (مدفوعة / ملغاة / معلّقة)
+                            StatusText = i.Status == InvoiceStatus.Paid
+                                            ? "مدفوعة"
+                                        : i.Status == InvoiceStatus.Canceled
+                                            ? "ملغاة"
+                                        : i.Status == InvoiceStatus.Suspended
+                                            ? "معلّقة"
+                                            : ""
+                        })
+                        .ToList();
 
-                 // ترجمة الحالة (مدفوعة / ملغاة / معلّقة)
-                 StatusText = i.Status == InvoiceStatus.Paid
-                                 ? "مدفوعة"
-                             : i.Status == InvoiceStatus.Canceled
-                                 ? "ملغاة"
-                             : i.Status == InvoiceStatus.Suspended
-                                 ? "معلّقة"
-                                 : ""
-             })
-             .ToList();
+                    dataGridViewReports.AutoGenerateColumns = true;
+                    dataGridViewReports.DataSource = list;
 
-            dataGridViewReports.AutoGenerateColumns = true;
-            dataGridViewReports.DataSource = list;
-
-            // عناوين الأعمدة
-            dataGridViewReports.Columns["Number"].HeaderText = "رقم الفاتورة";
-            dataGridViewReports.Columns["Date"].HeaderText = "التاريخ";
-            dataGridViewReports.Columns["Time"].HeaderText = "الوقت";
-            dataGridViewReports.Columns["UserName"].HeaderText = "المستخدم";
-            dataGridViewReports.Columns["RoleText"].HeaderText = "الدور";
-            dataGridViewReports.Columns["ItemsCount"].HeaderText = "عدد الأصناف";
-            dataGridViewReports.Columns["SubTotal"].HeaderText = "المجموع قبل الضريبة";
-            dataGridViewReports.Columns["Tax"].HeaderText = "الضريبة";
-            dataGridViewReports.Columns["GrandTotal"].HeaderText = "الإجمالي";
-            dataGridViewReports.Columns["StatusText"].HeaderText = "الحالة";
+                    // عناوين الأعمدة
+                    dataGridViewReports.Columns["Number"].HeaderText = "رقم الفاتورة";
+                    dataGridViewReports.Columns["Date"].HeaderText = "التاريخ";
+                    dataGridViewReports.Columns["Time"].HeaderText = "الوقت";
+                    dataGridViewReports.Columns["UserName"].HeaderText = "المستخدم";
+                    dataGridViewReports.Columns["RoleText"].HeaderText = "الدور";
+                    dataGridViewReports.Columns["ItemsCount"].HeaderText = "عدد الأصناف";
+                    dataGridViewReports.Columns["SubTotal"].HeaderText = "المجموع قبل الضريبة";
+                    dataGridViewReports.Columns["Tax"].HeaderText = "الضريبة";
+                    dataGridViewReports.Columns["GrandTotal"].HeaderText = "الإجمالي";
+                    dataGridViewReports.Columns["StatusText"].HeaderText = "الحالة";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"خطأ في تحميل التقارير: {ex.Message}", "خطأ",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         // ✅ ترجمة حالة الفاتورة (Paid / Suspended / Canceled) للعربي
@@ -87,9 +99,9 @@ namespace Customer
 
                 e.FormattingApplied = true;
             }
-           // ترجمة الدور(مسؤول / موظف)
-    if (dataGridViewReports.Columns[e.ColumnIndex].DataPropertyName == "RoleText" &&
-        e.Value is string role)
+            // ترجمة الدور(مسؤول / موظف)
+            if (dataGridViewReports.Columns[e.ColumnIndex].DataPropertyName == "RoleText" &&
+                e.Value is string role)
             {
                 if (role == "Admin")
                     e.Value = "مسؤول";
@@ -110,40 +122,51 @@ namespace Customer
                 return;
             }
 
-            int number = Convert.ToInt32(
-                dataGridViewReports.SelectedRows[0].Cells["Number"].Value);
-
-            // البحث داخل "تاريخ الفواتير" فقط
-            var invoice = AppDataStore.Current.InvoicesHistory
-                .LastOrDefault(i => i.Number == number); // 👈 آخر نسخة هي الصحيحة
-
-            if (invoice == null)
+            try
             {
-                MessageBox.Show("تعذر العثور على بيانات الفاتورة.", "خطأ",
+                int number = Convert.ToInt32(
+                    dataGridViewReports.SelectedRows[0].Cells["Number"].Value);
+
+                // البحث في قاعدة البيانات
+                InvoiceRecord invoice = null;
+                using (var db = new AppDbContext())
+                {
+                    invoice = db.Invoices.Find(number);
+                }
+
+                if (invoice == null)
+                {
+                    MessageBox.Show("تعذر العثور على بيانات الفاتورة.", "خطأ",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // تجهيز نص الفاتورة
+                StringBuilder invoiceText = new StringBuilder();
+                invoiceText.AppendLine("🧾 فاتورة المبيعات");
+                invoiceText.AppendLine("-----------------------------");
+
+                foreach (var p in invoice.Items)
+                {
+                    decimal lineTotal = p.Total;
+                    invoiceText.AppendLine($"{p.Name,-12} x{p.Quantity} = {lineTotal} ريال");
+                }
+
+                invoiceText.AppendLine("-----------------------------");
+                invoiceText.AppendLine($"الإجمالي قبل الضريبة: {invoice.SubTotal:0.00} ريال");
+                invoiceText.AppendLine($"الضريبة 15%: {invoice.Tax:0.00} ريال");
+                invoiceText.AppendLine($"الإجمالي الكلي: {invoice.GrandTotal:0.00} ريال");
+                invoiceText.AppendLine($"التاريخ: {invoice.Date:yyyy/MM/dd  hh:mm tt}");
+                invoiceText.AppendLine($"رقم الفاتورة: {invoice.Number}");
+
+                MessageBox.Show(invoiceText.ToString(), "إعادة طباعة الفاتورة",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"خطأ في إعادة طباعة الفاتورة: {ex.Message}", "خطأ",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
             }
-
-            // تجهيز نص الفاتورة
-            StringBuilder invoiceText = new StringBuilder();
-            invoiceText.AppendLine("🧾 فاتورة المبيعات");
-            invoiceText.AppendLine("-----------------------------");
-
-            foreach (var p in invoice.Items)
-            {
-                decimal lineTotal = p.Total;
-                invoiceText.AppendLine($"{p.Name,-12} x{p.Quantity} = {lineTotal} ريال");
-            }
-
-            invoiceText.AppendLine("-----------------------------");
-            invoiceText.AppendLine($"الإجمالي قبل الضريبة: {invoice.SubTotal:0.00} ريال");
-            invoiceText.AppendLine($"الضريبة 15%: {invoice.Tax:0.00} ريال");
-            invoiceText.AppendLine($"الإجمالي الكلي: {invoice.GrandTotal:0.00} ريال");
-            invoiceText.AppendLine($"التاريخ: {invoice.Date:yyyy/MM/dd  hh:mm tt}");
-            invoiceText.AppendLine($"رقم الفاتورة: {invoice.Number}");
-
-            MessageBox.Show(invoiceText.ToString(), "إعادة طباعة الفاتورة",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

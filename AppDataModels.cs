@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Newtonsoft.Json;
 
 namespace Customer
 {
@@ -21,7 +24,7 @@ namespace Customer
         public int Total => Price * Quantity;
     }
 
-    // 🔹 حالة الفاتورة (أضفنا Suspended و Paid عشان الكود القديم)
+    // 🔹 حالة الفاتورة
     public enum InvoiceStatus
     {
         Normal,
@@ -33,12 +36,13 @@ namespace Customer
     // 🔹 سجل الفاتورة المستخدم في التقارير والتاريخ
     public class InvoiceRecord
     {
+        [Key]
         public int Number { get; set; }
 
-        // بعض الأكواد تستخدم Date وبعضها Time، فخلّيناهم نفس الشي
         public DateTime Date { get; set; } = DateTime.Now;
 
         // توافق مع الكود القديم
+        [NotMapped]
         public DateTime Time
         {
             get => Date;
@@ -46,18 +50,45 @@ namespace Customer
         }
 
         public string UserName { get; set; } = "";
-        public UserRole Role { get; set; }   // 👈 جديد
+        public UserRole Role { get; set; }
 
-        // تفاصيل الأصناف في الفاتورة
-        public List<Product> Items { get; set; } = new List<Product>();
-        public decimal SubTotal { get; set; }   // المجموع قبل الضريبة
-        public decimal Tax { get; set; }        // قيمة الضريبة
-        public decimal GrandTotal { get; set; } // الإجمالي بعد الضريبة
+        // حفظ الأصناف كـ JSON في قاعدة البيانات
+        public string ItemsJson { get; set; } = "[]";
+
+        // الخاصية التي يستخدمها الكود
+        [NotMapped]
+        public List<Product> Items
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(ItemsJson))
+                    return new List<Product>();
+                try
+                {
+                    return JsonConvert.DeserializeObject<List<Product>>(ItemsJson) ?? new List<Product>();
+                }
+                catch
+                {
+                    return new List<Product>();
+                }
+            }
+            set
+            {
+                ItemsJson = JsonConvert.SerializeObject(value ?? new List<Product>());
+            }
+        }
+
+        public decimal SubTotal { get; set; }
+        public decimal Tax { get; set; }
+        public decimal GrandTotal { get; set; }
+
+        [NotMapped]
         public int ItemsCount
         {
             get => Items?.Sum(p => p.Quantity) ?? 0;
         }
-        // لو فيه كود قديم يستخدم Total فقط
+
+        [NotMapped]
         public decimal Total
         {
             get => GrandTotal;
@@ -67,68 +98,24 @@ namespace Customer
         public InvoiceStatus Status { get; set; } = InvoiceStatus.Normal;
     }
 
-    // 🔹 الفاتورة الكاملة المستخدمة داخل البرنامج (تعليق – استرجاع – ...إلخ)
-/*    public class Invoice
-    {
-        public int Id { get; set; }
-
-        // توافق مع الكود القديم اللي يستخدم Number
-        public int Number
-        {
-            get => Id;
-            set => Id = value;
-        }
-       
-
-        public DateTime Time { get; set; } = DateTime.Now;
-        public string UserName { get; set; } = "";
-        public UserRole Role { get; set; } = UserRole.Employee;
-        public List<Product> Items { get; set; } = new List<Product>();
-        public decimal SubTotal { get; set; }
-        public decimal Tax { get; set; }    
-        public decimal GrandTotal { get; set; }
-
-        public decimal Total
-        {
-            get => GrandTotal;
-            set => GrandTotal = value;
-        }
-
-        // 👈 تحويل تلقائي من InvoiceRecord إلى Invoice
-        public static implicit operator Invoice(InvoiceRecord r)
-        {
-            if (r == null) return null;
-
-            return new Invoice
-            {
-                Id = r.Number,
-                Time = r.Date,
-                UserName = r.UserName,
-                Items = r.Items
-                ?.Select(p => new Product
-                {
-                    Name = p.Name,
-                    Price = p.Price,
-                    Quantity = p.Quantity
-                }).ToList()
-                ?? new List<Product>(),
-
-                SubTotal = r.SubTotal,
-                Tax = r.Tax,
-                GrandTotal = r.GrandTotal
-            };
-        }
-    }
-*/
     // 🔹 معلومات المستخدم
     public class UserInfo
+    {
+        [Key]
+        public string UserName { get; set; }
+        public string Password { get; set; }
+        public UserRole Role { get; set; }
+    }
+
+    // 🔹 كلاس مساعد لإدارة المستخدمين في الجدول
+    public class UserAccount
     {
         public string UserName { get; set; }
         public string Password { get; set; }
         public UserRole Role { get; set; }
     }
 
-    // 🔹 كل البيانات اللي تنحفظ في ملف JSON واحد
+    // 🔹 كل البيانات (للتوافق مع الكود القديم - سيتم الاستغناء عنه تدريجياً)
     public class AppData
     {
         public string StoreName { get; set; } = "";
@@ -138,33 +125,13 @@ namespace Customer
         public string FooterMessage { get; set; } = "";
         public string StoreLogoBase64 { get; set; } = "";
         public string PrinterName { get; set; } = "";
-        public string LogoBase64 { get; set; } = "";
         public bool EnableLogo { get; set; } = false;
-
         public bool TouchMode { get; set; } = false;
-        public string Language { get; set; } = "Arabic";
-
-        // المستخدمين
         public List<UserInfo> Users { get; set; } = new List<UserInfo>();
-
-
-        // نسبة الضريبة
-        //public decimal VatRate { get; set; } = 0.15m;
-
-        // آخر رقم فاتورة
         public int LastInvoiceNumber { get; set; } = 0;
-
-        // سجل الفواتير (للتقارير)
         public List<InvoiceRecord> Invoices { get; set; } = new List<InvoiceRecord>();
-
-        // الفواتير المعلّقة
         public List<InvoiceRecord> SuspendedInvoices { get; set; } = new List<InvoiceRecord>();
-
-        // تاريخ الفواتير العادية
         public List<InvoiceRecord> InvoicesHistory { get; set; } = new List<InvoiceRecord>();
-
-        // الفواتير الملغاة
         public List<InvoiceRecord> CanceledInvoices { get; set; } = new List<InvoiceRecord>();
     }
-
 }
