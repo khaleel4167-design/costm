@@ -8,7 +8,7 @@ namespace Customer
         static AppDbContext()
         {
             // تعطيل Database Initializer لأن SQLite لا يدعمه بشكل جيد
-            Database.SetInitializer<AppDbContext>(null);
+            //Database.SetInitializer<AppDbContext>(null);
         }
 
         public AppDbContext() : base("DefaultConnection")

@@ -23,6 +23,27 @@ namespace Customer
             // إذا كان المستخدم يغلق النافذة عن طريق زر X
             if (e.CloseReason == CloseReason.UserClosing)
             {
+                // إذا كانت هناك أصناف في الفاتورة، نطلب تأكيد المستخدم وتعليق الفاتورة
+                if (products != null && products.Count > 0)
+                {
+                    var result = MessageBox.Show(
+                        "هناك فاتوره غير مصدره سوف يتم تعليق الفاتوره هل انت متاكد من اغلاق التطبيق",
+                        "تنبيه",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Warning);
+
+                    if (result == DialogResult.No)
+                    {
+                        e.Cancel = true;
+                        return;
+                    }
+                    else
+                    {
+                        // تعليق الفاتورة قبل الإغلاق
+                        SuspendInvoice();
+                    }
+                }
+
                 // إلغاء الإغلاق
                 e.Cancel = true;
 
@@ -96,7 +117,7 @@ namespace Customer
         }
         private InvoiceRecord CreateInvoiceRecord(InvoiceStatus status)
         {
-            var itemsCopy = products.Select(p => new Product
+            var itemsCopy = products.Select(p => new Product //نعمل كنستراكتور من نوع كبي ينسخ اللسته تبع الاوبجكت الخارج من كلاس البرودكت
             {
                 Name = p.Name,
                 Price = p.Price,
@@ -109,7 +130,7 @@ namespace Customer
 
             int number;
 
-            // 1) إذا كنت تسترجع فاتورة معلقة → استخدم رقمها كما هو
+            //   إذا كنت تسترجع فاتورة معلقة استخدم رقمها كما هو
             if (_currentInvoiceNumber.HasValue)
             {
                 number = _currentInvoiceNumber.Value;
@@ -351,10 +372,8 @@ namespace Customer
             if (confirm == DialogResult.No)
                 return;
 
-            // إنشاء سجل الفاتورة كملغاة (يحتفظ بالرقم الأصلي)
+            // إنشاء سجل الفاتورة كملغاة يحتفظ بالرقم الأصلي
             var canceledRecord = CreateInvoiceRecord(InvoiceStatus.Canceled);
-
-            // تخزينها في قائمة الفواتير الملغاة
             AppDataStore.Current.CanceledInvoices.Add(canceledRecord);
             AppDataStore.Save();
 
@@ -786,9 +805,8 @@ namespace Customer
             PrintInvoiceToPrinter();
 
             // حفظ الفاتورة في قاعدة البيانات
-            var record = CreateInvoiceRecord(InvoiceStatus.Paid);
-            AppDataStore.Current.Invoices.Add(record);
-            AppDataStore.Current.InvoicesHistory.Add(record);
+            var record = CreateInvoiceRecord(InvoiceStatus.Paid);// انشاء صف في جدول الفواتير المدفوعه
+            AppDataStore.Current.Invoices.Add(record);//اضاف معلومات الفاتوره في الصف 
             AppDataStore.Save();
 
             // تنظيف الفاتورة من الشاشة
@@ -938,17 +956,8 @@ namespace Customer
 
             try
             {
-                // ننشئ سجل فاتورة بالحالة "معلّقة"
-                var invRecord = CreateInvoiceRecord(InvoiceStatus.Suspended);
-
-                // حفظ الفاتورة في قاعدة البيانات
-                using (var db = new AppDbContext())
-                {
-                    db.Invoices.Add(invRecord);
-                    db.SaveChanges();
-                }
-
-                // تحديث AppDataStore للتوافق مع الكود القديم
+             
+                var invRecord = CreateInvoiceRecord(InvoiceStatus.Suspended);// انشاء صف للفاتوره المعلقه
                 AppDataStore.Current.SuspendedInvoices.Add(invRecord);
                 AppDataStore.Save();
 
@@ -967,20 +976,18 @@ namespace Customer
 
 
 
-        // 🔁 استرجاع الفاتورة المعلّقة
-        // 🔁 استرجاع فاتورة معلّقة عبر الفورم الصغير
+   
         private void ResumeSuspendedInvoice()
         {
-            // 1) لو ما فيه فواتير معلّقة
-            if (AppDataStore.Current.SuspendedInvoices == null ||
-                AppDataStore.Current.SuspendedInvoices.Count == 0)
+            // لو ما فيه فواتير معلّقة
+            if (AppDataStore.Current.SuspendedInvoices == null ||AppDataStore.Current.SuspendedInvoices.Count == 0)
             {
                 MessageBox.Show("لا توجد فواتير معلّقة.", "تنبيه",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
-            // 2) فتح فورم الفواتير المعلّقة
+            //  فتح فورم الفواتير المعلّقة
             using (var dlg = new SuspendedInvoicesForm(AppDataStore.Current.SuspendedInvoices))
             {
                 if (dlg.ShowDialog(this) == DialogResult.OK && dlg.SelectedInvoice != null)

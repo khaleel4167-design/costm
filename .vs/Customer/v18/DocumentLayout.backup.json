@@ -3,94 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Khali\\Documents\\github\\Customer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|C:\\Users\\Khali\\Documents\\github\\Customer\\appdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:appdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|C:\\Users\\Khali\\Documents\\github\\Customer\\appdatamodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:appdatamodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|C:\\Users\\Khali\\Documents\\github\\Customer\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|c:\\users\\khali\\documents\\github\\customer\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|C:\\Users\\Khali\\Documents\\github\\Customer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|C:\\Users\\Khali\\Documents\\github\\Customer\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|c:\\users\\khali\\documents\\github\\customer\\settingsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:settingsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Customer||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|C:\\Users\\Khali\\Documents\\github\\Customer\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|C:\\Users\\Khali\\Documents\\github\\Customer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|c:\\users\\khali\\documents\\github\\customer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|c:\\users\\khali\\documents\\github\\customer\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|C:\\Users\\Khali\\Documents\\github\\Customer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|C:\\Users\\Khali\\Documents\\github\\Customer\\reportsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:reportsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|C:\\Users\\Khali\\Documents\\github\\Customer\\appdatamodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:appdatamodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|C:\\Users\\Khali\\Documents\\github\\Customer\\suspendedinvoicesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:suspendedinvoicesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|C:\\Users\\Khali\\Documents\\github\\Customer\\appdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:appdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|C:\\Users\\Khali\\Documents\\github\\Customer\\userstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:userstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|C:\\Users\\Khali\\Documents\\github\\Customer\\usermanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:usermanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|C:\\Users\\Khali\\Documents\\github\\Customer\\reportsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:reportsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|C:\\Users\\Khali\\Documents\\github\\Customer\\usermanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:usermanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|C:\\Users\\Khali\\Documents\\github\\Customer\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|C:\\Users\\Khali\\Documents\\github\\Customer\\suspendedinvoicesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:suspendedinvoicesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|C:\\Users\\Khali\\Documents\\github\\Customer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|C:\\Users\\Khali\\Documents\\github\\Customer\\reportsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:reportsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|c:\\users\\khali\\documents\\github\\customer\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+      "AbsoluteMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|C:\\Users\\Khali\\Documents\\github\\Customer\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5261E130-D786-4A35-BF59-9169C46F5358}|Customer.csproj|solutionrelative:appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -100,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -124,278 +54,63 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SettingsForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\SettingsForm.Designer.cs",
-              "RelativeDocumentMoniker": "SettingsForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\SettingsForm.Designer.cs",
-              "RelativeToolTip": "SettingsForm.Designer.cs",
-              "ViewState": "AgIAAGoBAAAAAAAAAAAuwHMBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T18:46:05.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "app.manifest",
-              "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\app.manifest",
-              "RelativeDocumentMoniker": "app.manifest",
-              "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\app.manifest",
-              "RelativeToolTip": "app.manifest",
-              "ViewState": "AgIAAAgAAAAAAAAAAIAwwCIAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
-              "WhenOpened": "2026-02-03T18:45:03.197Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\App.config",
-              "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\App.config",
-              "RelativeToolTip": "App.config",
-              "ViewState": "AgIAABMAAAAAAAAAAAAwwCUAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-02-02T16:01:30.602Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\AppDbContext.cs",
               "RelativeDocumentMoniker": "AppDbContext.cs",
               "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\AppDbContext.cs",
               "RelativeToolTip": "AppDbContext.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAIAwwCoAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAWwA0AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T15:48:44.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-07T10:38:16.224Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\LoginForm.cs",
-              "RelativeDocumentMoniker": "LoginForm.cs",
-              "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\LoginForm.cs",
-              "RelativeToolTip": "LoginForm.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAAEUAAABoAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "AppDataStore.cs",
+              "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\AppDataStore.cs",
+              "RelativeDocumentMoniker": "AppDataStore.cs",
+              "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\AppDataStore.cs",
+              "RelativeToolTip": "AppDataStore.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAArwGQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T15:37:41.679Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-07T10:38:15.071Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AppDataModels.cs",
               "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\AppDataModels.cs",
               "RelativeDocumentMoniker": "AppDataModels.cs",
               "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\AppDataModels.cs",
               "RelativeToolTip": "AppDataModels.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAhwDcAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAADgv2AAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T15:37:41.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-07T10:38:13.553Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAFECAAAAAAAAAAASwFgCAABMAAAAAAAAAA==",
+              "ViewState": "AgIAANcDAAAAAAAAAAArwN4DAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T15:37:41.466Z",
+              "WhenOpened": "2026-02-07T10:38:04.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T15:37:41.669Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SettingsForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\SettingsForm.cs",
-              "RelativeDocumentMoniker": "SettingsForm.cs",
-              "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\SettingsForm.cs [Design]",
-              "RelativeToolTip": "SettingsForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T15:37:41.674Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SettingsForm.cs",
-              "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\SettingsForm.cs",
-              "RelativeDocumentMoniker": "SettingsForm.cs",
-              "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\SettingsForm.cs",
-              "RelativeToolTip": "SettingsForm.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAowDkAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T15:37:41.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppDataStore.cs",
-              "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\AppDataStore.cs",
-              "RelativeDocumentMoniker": "AppDataStore.cs",
-              "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\AppDataStore.cs",
-              "RelativeToolTip": "AppDataStore.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAYwDQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T15:37:41.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UserManagementForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\UserManagementForm.cs",
-              "RelativeDocumentMoniker": "UserManagementForm.cs",
-              "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\UserManagementForm.cs [Design]",
-              "RelativeToolTip": "UserManagementForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T15:37:41.676Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UserManagementForm.cs",
-              "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\UserManagementForm.cs",
-              "RelativeDocumentMoniker": "UserManagementForm.cs",
-              "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\UserManagementForm.cs",
-              "RelativeToolTip": "UserManagementForm.cs",
-              "ViewState": "AgIAACgBAAAAAAAAAAAUwC8AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T15:37:41.677Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UserStore.cs",
-              "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\UserStore.cs",
-              "RelativeDocumentMoniker": "UserStore.cs",
-              "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\UserStore.cs",
-              "RelativeToolTip": "UserStore.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAgwAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T15:37:41.678Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\LoginForm.cs",
-              "RelativeDocumentMoniker": "LoginForm.cs",
-              "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\LoginForm.cs [Design]",
-              "RelativeToolTip": "LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T15:37:41.678Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ReportsForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\ReportsForm.cs",
-              "RelativeDocumentMoniker": "ReportsForm.cs",
-              "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\ReportsForm.cs [Design]",
-              "RelativeToolTip": "ReportsForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T15:37:41.681Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ReportsForm.cs",
-              "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\ReportsForm.cs",
-              "RelativeDocumentMoniker": "ReportsForm.cs",
-              "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\ReportsForm.cs",
-              "RelativeToolTip": "ReportsForm.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAqwJUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T15:37:41.681Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "SuspendedInvoicesForm.cs",
-              "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\SuspendedInvoicesForm.cs",
-              "RelativeDocumentMoniker": "SuspendedInvoicesForm.cs",
-              "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\SuspendedInvoicesForm.cs",
-              "RelativeToolTip": "SuspendedInvoicesForm.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwIwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T15:37:41.681Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "SuspendedInvoicesForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\SuspendedInvoicesForm.cs",
-              "RelativeDocumentMoniker": "SuspendedInvoicesForm.cs",
-              "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\SuspendedInvoicesForm.cs [Design]",
-              "RelativeToolTip": "SuspendedInvoicesForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T15:37:41.682Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA3wBUAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T15:37:41.682Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ReportsForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\ReportsForm.Designer.cs",
-              "RelativeDocumentMoniker": "ReportsForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\ReportsForm.Designer.cs",
-              "RelativeToolTip": "ReportsForm.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T15:37:41.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Customer",
-              "DocumentMoniker": "C:\\Users\\Khali\\Documents\\github\\Customer\\Customer.csproj",
-              "RelativeDocumentMoniker": "Customer.csproj",
-              "ToolTip": "C:\\Users\\Khali\\Documents\\github\\Customer\\Customer.csproj",
-              "RelativeToolTip": "Customer.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-07T13:56:48.68Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-07T10:38:01.761Z"
             }
           ]
         }

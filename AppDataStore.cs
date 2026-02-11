@@ -55,7 +55,6 @@ namespace Customer
                     var allInvoices = db.Invoices.ToList();
                     Current.Invoices = allInvoices.Where(i => i.Status == InvoiceStatus.Paid).ToList();
                     Current.SuspendedInvoices = allInvoices.Where(i => i.Status == InvoiceStatus.Suspended).ToList();
-                    Current.InvoicesHistory = allInvoices.Where(i => i.Status == InvoiceStatus.Normal).ToList();
                     Current.CanceledInvoices = allInvoices.Where(i => i.Status == InvoiceStatus.Canceled).ToList();
                 }
             }
@@ -72,9 +71,9 @@ namespace Customer
                 Current = CreateDefaultData();
             }
         }
-
+        
         /// <summary>
-        /// حفظ البيانات في قاعدة البيانات
+        ///  حفظ البيانات في قاعدة البيانات
         /// </summary>
         public static void Save()
         {
@@ -119,17 +118,16 @@ namespace Customer
                     var allInvoicesToSave = new List<InvoiceRecord>();
                     allInvoicesToSave.AddRange(Current.Invoices);
                     allInvoicesToSave.AddRange(Current.SuspendedInvoices);
-                    allInvoicesToSave.AddRange(Current.InvoicesHistory);
                     allInvoicesToSave.AddRange(Current.CanceledInvoices);
 
-                    foreach (var invoice in allInvoicesToSave)
+                    foreach (var invoice in allInvoicesToSave)// لتحديث القيم الجديده والتحقق من الفاتوره 
                     {
                         var existingInvoice = db.Invoices.Find(invoice.Number);
-                        if (existingInvoice == null)
+                        if (existingInvoice == null)// يضيفها
                         {
                             db.Invoices.Add(invoice);
                         }
-                        else
+                        else// يحدث لقيم
                         {
                             db.Entry(existingInvoice).CurrentValues.SetValues(invoice);
                             existingInvoice.ItemsJson = invoice.ItemsJson; // مهم لتحديث الأصناف

@@ -20,7 +20,6 @@ namespace Customer
         public string Name { get; set; }
         public int Price { get; set; }
         public int Quantity { get; set; }
-
         public int Total => Price * Quantity;
     }
 
@@ -131,7 +130,6 @@ namespace Customer
         public int LastInvoiceNumber { get; set; } = 0;
         public List<InvoiceRecord> Invoices { get; set; } = new List<InvoiceRecord>();
         public List<InvoiceRecord> SuspendedInvoices { get; set; } = new List<InvoiceRecord>();
-        public List<InvoiceRecord> InvoicesHistory { get; set; } = new List<InvoiceRecord>();
         public List<InvoiceRecord> CanceledInvoices { get; set; } = new List<InvoiceRecord>();
     }
 }
